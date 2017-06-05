@@ -117,8 +117,9 @@ Each page's title should match the game's respective folder in the code section,
 
 The format of each page is as follows:
 - H2 header with text saying `Summary`.
-- Brief summary of how the game performs.
+- Brief summary of how the game performs: graphically, auditorily, and frame rate (with general hardware comparison - see MK7 example). 
 - H3 subheader saying `Problems`.
+- Slow frame rate issues are subjective and should not be included.
 - For each problem, a bullet describing an issue the game has.
 - For each of those bullets, make a sub-bullet linking to the relevant Github issue on `citra-emu`.
 - If there's any relevant media, make another sub-bullet linking to it.
