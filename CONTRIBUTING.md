@@ -70,6 +70,7 @@ Game icons should not be compressed.
 ### Boxart
 The boxart for the game is located at `/<Game Name>/boxart.png`. The suggested process for getting one is:
 - Download a scan from [GameTDB](http://www.gametdb.com/), preferably with the `Nintendo 3DS` logo on the right.
+- The boxart should be from the USA.
 - Downsize it to approximately `328x300` using [PicResize](http://www.picresize.com/).
 - Compress it using [TinyPNG](https://tinypng.com/).
 
@@ -116,7 +117,7 @@ The format of each page is as follows:
 An example of a game wiki page is the one for [Mario Kart 7](https://github.com/citra-emu/citra-games-wiki/wiki/Mario-Kart-7):
 ```markdown
 ## Summary
-Mario Kart 7 has some problems in Citra. It is playable, but there are minor graphical glitches.
+Mario Kart 7 has some problems in Citra. Graphically, the game suffers from minor issues, but requires decent hardware to obtain near full speed. It suffers from minor audio issues at times, but this does not hinder gameplay in any way. You may experience random crashes, slow down, and may need to transfer save files from Citra to your 3DS to complete certain tracks.
 
 ### Problems
 - Random crashes may occur.
