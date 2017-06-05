@@ -1,0 +1,13 @@
+title = "Monster Hunter 4 Ultimate"
+description = "Monster Hunter 4 Ultimate is a game about hunting monsters. The game contains a few towns that act as hubs for the player and other hunters.  From the hubs, the player can go on quests to many different locations where they often fight large monsters or need to gather special materials.  In addition the game features crafting of armors, weapons, and items to help the player to defeat the game's many powerful monsters.  Monster Hunter 4 Ultimate was developed and published by Capcom.  The game's director is Kaname Fujioka, whose been with the series since Monster Hunter Tri."
+compatibility = 3
+tested_date = "2017-06-05"
+tested_version = "HEAD-bae3799"
+needs_system_files = true
+needs_shared_font = true
+tested_by = "Desmond"
+
+[[ releases ]]
+title = "0004000000126300"
+region = "USA"
+release_date = "2013-09-14"
