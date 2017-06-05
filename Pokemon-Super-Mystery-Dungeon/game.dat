@@ -1,5 +1,5 @@
 title = "Pokémon Super Mystery Dungeon"
-description = "Pokémon Super Mystery Dungeon is a Nintendo 3DS title that is a part of the Pokémon Mystery Dungeon series. It is the tenth entry in Japan and the seventh entry internationally. Like the other Pokémon Mystery Dungeon games, it is an adaptation of the Mystery Dungeon games with Pokémon characters."
+description = "Pokémon Super Mystery Dungeon is a roguelike video game in the Pokémon Mystery Dungeon series developed by Spike Chunsoft and published by The Pokémon Company for the Nintendo 3DS handheld game console. Like its predecessors, players control a human who has awoken as a Pokémon in a world filled entirely by the series' eponymous creatures, and must travel through random-generated dungeons completing missions and battling enemies to unravel the story."
 compatibility = 2
 tested_date = "2017-06-05"
 tested_version = "HEAD-8f0a23b"
