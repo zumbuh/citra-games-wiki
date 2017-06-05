@@ -60,10 +60,11 @@ release_date = "2011-06-19"
 ```
 
 ### Icon
-The icon for a game is located at `/<Game Name>/boxart.png`. The suggested process for getting one is:
+The icon for a game is located at `/<Game Name>/icon.png`. The suggested process for getting one is:
 - Make sure the ROM for the game is in your Citra game directory.
 - Take a screenshot of Citra's library listing.
 - Crop out the game icon.
+- The icon should be `48x48`.
 
 Game icons should not be compressed.
 
