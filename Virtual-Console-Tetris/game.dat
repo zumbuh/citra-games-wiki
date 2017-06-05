@@ -1,0 +1,13 @@
+title = "Virtual Console: Tetris"
+description = "Tetris is a puzzle video game for the Game Boy released in 1989.  A Nintendo 3DS Virtual Console version of Tetris was released in December 2011 and lacks the multiplayer functionality. It was delisted from the Nintendo eShop after December 31, 2014."
+compatibility = 1
+tested_date = "2017-06-04"
+tested_version = "HEAD-8f0a23b"
+needs_system_files = false
+needs_shared_font = true
+tested_by = "Flamboyant_Ham"
+
+[[ releases ]]
+title = "000400000007e700"
+region = "USA"
+release_date = "2011-12-22"
