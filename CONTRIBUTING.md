@@ -22,7 +22,7 @@ At the root, there's a folder for each game. The names of these folders should f
 ### Metadata
 The metadata for the game is located at `/<Game Name>/game.dat`. This is required info about the game. The DAT values are:
 - `title` (String): English title of the game. This doesn't have to match the wiki or foldeer name, so there can be spaces.
-- `description` (String): Short, 1-2 line description of the game. Get these from [Wikipedia](https://en.wikipedia.org/wiki/List_of_Nintendo_3DS_games).
+- `description` (String): Get these from [Wikipedia](https://en.wikipedia.org/wiki/List_of_Nintendo_3DS_games). Short, 1-2 line description of the game.
 - `compatibility` (Integer): How well the game works in Citra. A reference can be found [here](https://citra-emu.org/game/), with `Won't Boot` being `5`, and `Perfect` being `0`.
 - `tested_date` (String): Last date the game was tested on.
 - `tested_version` (String): Last version of Citra the game was tested on.
