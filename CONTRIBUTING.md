@@ -69,11 +69,19 @@ The icon for a game is located at `/<Game Name>/icon.png`. The suggested process
 Game icons should not be compressed.
 
 ### Boxart
-The boxart for the game is located at `/<Game Name>/boxart.png`. The suggested process for getting one is:
+The boxart for the game is located at `/<Game Name>/boxart.png`. The suggested process for getting retail boxart is:
 - Download a scan from [GameTDB](http://www.gametdb.com/), preferably with the `Nintendo 3DS` logo on the right.
 - The boxart should be from the USA.
 - Downsize it to approximately `328x300` using [PicResize](http://www.picresize.com/).
 - Compress it using [TinyPNG](https://tinypng.com/).
+
+The required process for getting virtual console/eShop only boxart is:
+- Run the game in Citra.
+- Increase the window size of Citra to fill most of your monitor.
+- Screenshot only the top screen.
+- Downsize it to approximately `328x300` using [PicResize](http://www.picresize.com/).
+- Compress it using [TinyPNG](https://tinypng.com/).
+- Examples are [Legend of Zelda](https://github.com/citra-emu/citra-games-wiki/blob/master/Virtual-Console-Legend-of-Zelda/boxart.png) and [Tetris](https://github.com/citra-emu/citra-games-wiki/blob/master/Virtual-Console-Tetris/boxart.png)
 
 ### Screenshots
 The screenshots for the game are located in `/<Game Name>/screenshots/`. Screenshots **must** follow these specifications:
