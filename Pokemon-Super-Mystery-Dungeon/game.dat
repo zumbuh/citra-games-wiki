@@ -1,6 +1,6 @@
 title = "Pokémon Super Mystery Dungeon"
 description = "Pokémon Super Mystery Dungeon is a Nintendo 3DS title that is a part of the Pokémon Mystery Dungeon series. It is the tenth entry in Japan and the seventh entry internationally. Like the other Pokémon Mystery Dungeon games, it is an adaptation of the Mystery Dungeon games with Pokémon characters."
-compatibility = 4
+compatibility = 2
 tested_date = "2017-06-05"
 tested_version = "HEAD-8f0a23b"
 needs_system_files = false

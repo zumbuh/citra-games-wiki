@@ -1,6 +1,6 @@
 title = "Pokémon Mystery Dungeon: Gates to Infinity"
 description = "Pokémon Mystery Dungeon: Gates to Infinity is a Nintendo 3DS title that is the ninth entry in the Pokémon Mystery Dungeon series in Japan, and the sixth internationally. Like the other Pokémon Mystery Dungeon games, it is an adaptation of the Mystery Dungeon games for Pokémon."
-compatibility = 5
+compatibility = 1
 tested_date = "2017-06-05"
 tested_version = "HEAD-8f0a23b"
 needs_system_files = false
