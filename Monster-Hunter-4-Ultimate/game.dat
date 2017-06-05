@@ -4,7 +4,7 @@ compatibility = 3
 tested_date = "2017-06-05"
 tested_version = "HEAD-bae3799"
 needs_system_files = true
-needs_shared_font = false
+needs_shared_font = true
 tested_by = "Desmond"
 
 [[ releases ]]
