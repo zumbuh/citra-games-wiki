@@ -39,7 +39,7 @@ The metadata for the game is located at `/<Game Name>/game.dat`. This is require
   - `release_date` (String): When the game was released in this region.
   
 - `testcases` (Array of tables): Info about each submitted test case.
-  - `compatibility` (Integer): How well the game works in Citra. A reference can be found [here](https://citra-emu.org/game/), with `Won't Boot` being `5`, and `Perfect` being `0`.
+  - `compatibility` (String): How well the game works in Citra. A reference can be found [here](https://citra-emu.org/game/), with `Won't Boot` being `"5"`, and `Perfect` being `"0"`.
   - `date` (String): Last date the game was tested on.
   - `version` (String): Last version of Citra the game was tested on.
   - `author` (String): Your forum account name, if you have one. If you don't, don't include this line.
@@ -57,7 +57,7 @@ region = "USA"
 release_date = "2011-06-19"
 
 [[ testcases ]]
-compatibility = 0
+compatibility = "0"
 date = "2017-06-03"
 version = "HEAD-a7ddec8"
 author = "Flamboyant_Ham"

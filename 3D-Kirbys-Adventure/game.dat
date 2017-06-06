@@ -19,7 +19,7 @@ region = "JPN"
 release_date = "2012-04-25"
 
 [[ testcases ]]
-compatibility = 1
+compatibility = "1"
 date = "2017-06-05"
 version = "HEAD-8f0a23b"
 author = "Clector"

@@ -9,7 +9,7 @@ region = "USA"
 release_date = "2017-02-28"
 
 [[ testcases ]]
-compatibility = 0
+compatibility = "0"
 date = "2017-06-05"
 version = "HEAD-8f0a23b"
 author = "soukoba"

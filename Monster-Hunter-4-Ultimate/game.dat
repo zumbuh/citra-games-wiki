@@ -9,7 +9,7 @@ region = "USA"
 release_date = "2015-02-13"
 
 [[ testcases ]]
-compatibility = 3
+compatibility = "3"
 date = "2017-06-05"
 version = "HEAD-bae3799"
 author = "Desmond"

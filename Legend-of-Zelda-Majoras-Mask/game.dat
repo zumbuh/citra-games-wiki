@@ -14,7 +14,7 @@ region = "EUR"
 release_date = "2015-02-13"
 
 [[ testcases ]]
-compatibility = 1
+compatibility = "1"
 date = "2017-06-03"
 version = "HEAD-a7ddec8"
 author = "Flamboyant_Ham"

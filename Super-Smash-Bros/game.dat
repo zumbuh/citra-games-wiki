@@ -9,7 +9,7 @@ region = "USA"
 release_date = "2014-10-3"
 
 [[ testcases ]]
-compatibility = 1
+compatibility = "1"
 date = "2017-05-31"
 version = "HEAD-4857eb4"
 author = "Flamboyant_Ham"
