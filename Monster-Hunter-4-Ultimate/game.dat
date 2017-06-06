@@ -1,13 +1,17 @@
 title = "Monster Hunter 4 Ultimate"
 description = "Monster Hunter 4 is an action role-playing video game developed and published by Capcom. It is the second game in the Monster Hunter series to be released on the Nintendo 3DS. Originally released in Japan on September 14, 2013. On January 26, 2014, an enhanced edition titled Monster Hunter 4G was announced for release in Japan on October 11, 2014, and allowed players to utilize Monster Hunter 4 save files. This version was released in North America and Europe as Monster Hunter 4 Ultimate on February 13, 2015. The new version of the game was released alongside New Nintendo 3DS in all regions except Australia, and in addition to the separate game release, it is available bundled with a 3DS XL variant of the newer console model."
-compatibility = 3
-tested_date = "2017-06-05"
-tested_version = "HEAD-bae3799"
 needs_system_files = true
 needs_shared_font = true
-tested_by = "Desmond"
 
 [[ releases ]]
 title = "0004000000126300"
 region = "USA"
 release_date = "2015-02-13"
+
+[[ testcases ]]
+compatibility = 3
+date = "2017-06-05"
+version = "HEAD-bae3799"
+author = "Desmond"
+cpu = ""
+gpu = ""
