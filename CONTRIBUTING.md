@@ -23,12 +23,8 @@ At the root, there's a folder for each game. The names of these folders should f
 The metadata for the game is located at `/<Game Name>/game.dat`. This is required info about the game. The DAT values are:
 - `title` (String): English title of the game. This doesn't have to match the wiki or foldeer name, so there can be spaces.
 - `description` (String): Get these from [Wikipedia](https://en.wikipedia.org/wiki/List_of_Nintendo_3DS_games). Short, 1-2 line description of the game.
-- `compatibility` (Integer): How well the game works in Citra. A reference can be found [here](https://citra-emu.org/game/), with `Won't Boot` being `5`, and `Perfect` being `0`.
-- `tested_date` (String): Last date the game was tested on.
-- `tested_version` (String): Last version of Citra the game was tested on.
 - `needs_system_files` (Boolean): Whether the game requests the system files or not, regardless of whether it could be played without them.
 - `needs_shared_font` (Boolean): Whether the game requests the shared font or not, regardless of whether it could be played without them.
-- `tested_by` (String): Your forum account name, if you have one. If you don't, don't include this line.
 
 - `releases` (Array of tables): Info about each release of the game.
   - `title` (String): Title ID of this release of the game.
@@ -41,22 +37,32 @@ The metadata for the game is located at `/<Game Name>/game.dat`. This is require
     - `TWN`
     - `USA`
   - `release_date` (String): When the game was released in this region.
+  
+- `testcases` (Array of tables): Info about each submitted test case.
+  - `compatibility` (Integer): How well the game works in Citra. A reference can be found [here](https://citra-emu.org/game/), with `Won't Boot` being `5`, and `Perfect` being `0`.
+  - `date` (String): Last date the game was tested on.
+  - `version` (String): Last version of Citra the game was tested on.
+  - `author` (String): Your forum account name, if you have one. If you don't, don't include this line.
 
 An example of a game metadata file is the one for [The Legend of Zelda: Ocarina of Time](https://github.com/citra-emu/citra-games-wiki/blob/master/Legend-of-Zelda-Ocarina-of-Time/game.dat):
 ```js
 title = "The Legend of Zelda: Ocarina of Time 3D"
 description = "The Legend of Zelda: Ocarina of Time 3D is an action-adventure video game co-developed by Grezzo and Nintendo EAD Tokyo and published by Nintendo for the Nintendo 3DS handheld game console. The game was released worldwide in June 2011."
-compatibility = 0
-tested_date = "2017-06-03"
-tested_version = "HEAD-a7ddec8"
 needs_system_files = false
 needs_shared_font = false
-tested_by = "Flamboyant_Ham"
 
 [[ releases ]]
 title = "0004000000033500"
 region = "USA"
 release_date = "2011-06-19"
+
+[[ testcases ]]
+compatibility = 0
+date = "2017-06-03"
+version = "HEAD-a7ddec8"
+author = "Flamboyant_Ham"
+cpu = ""
+gpu = ""
 ```
 
 ### Icon
