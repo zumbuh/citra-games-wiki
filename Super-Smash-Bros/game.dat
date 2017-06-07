@@ -7,7 +7,7 @@ needs_shared_font = true
 [[ releases ]]
 title = "00040000000EDF00"
 region = "USA"
-release_date = "2014-10-3"
+release_date = "2014-10-03"
 
 [[ testcases ]]
 compatibility = "1"
