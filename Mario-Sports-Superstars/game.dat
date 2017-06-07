@@ -1,5 +1,6 @@
 title = "Mario Sports Superstars"
 description = "Mario Sports Superstars is a sports video game developed by Bandai Namco Studios and Camelot Software Planning and published by Nintendo for the Nintendo 3DS handheld video game console. The game contains five sports minigames, soccer, baseball, tennis, golf, and horse racing, and was released worldwide in March 2017."
+github_issues = [2660]
 
 [[ releases ]]
 title = "0004000000188C00"
@@ -11,5 +12,6 @@ compatibility = "5"
 date = "2017-06-03"
 version = "HEAD-a7ddec8"
 author = "Flamboyant_Ham"
-cpu = ""
-gpu = ""
+cpu = "Intel Core i7-4720HQ"
+gpu = "GeForce GTX 960M"
+os = "Windows 10 14393"

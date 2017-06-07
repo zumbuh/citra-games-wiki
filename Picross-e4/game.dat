@@ -14,9 +14,10 @@ region = "JPN"
 release_date = "2013-11-20"
 
 [[ testcases ]]
-compatibility = "1"
+compatibility = "0"
 date = "2017-06-05"
 version = "HEAD-8f0a23b"
 author = "SonofUgly"
 cpu = ""
 gpu = ""
+os = ""

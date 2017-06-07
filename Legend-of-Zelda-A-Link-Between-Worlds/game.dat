@@ -1,5 +1,6 @@
 title = "The Legend of Zelda: A Link Between Worlds"
 description = "The Legend of Zelda: A Link Between Worlds is an action-adventure game developed and published by Nintendo for the Nintendo 3DS handheld game console. It is the seventeenth installment in The Legend of Zelda series and a successor to the 1991 Super Nintendo Entertainment System title The Legend of Zelda: A Link to the Past."
+github_issues = [2731]
 needs_system_files = false
 needs_shared_font = false
 
@@ -15,3 +16,4 @@ version = "HEAD-e46ec64"
 author = "Leo121"
 cpu = ""
 gpu = ""
+os = ""

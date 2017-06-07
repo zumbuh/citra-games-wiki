@@ -1,5 +1,6 @@
 title = "Pokémon Sun and Moon"
 description = "Pokémon Sun and Pokémon Moon are role-playing video games developed by Game Freak and published by Nintendo for the Nintendo 3DS. They are the first installments in the seventh generation of Pokémon games."
+github_issues = [2190]
 needs_system_files = false
 needs_shared_font = false
 
@@ -18,5 +19,6 @@ compatibility = "1"
 date = "2017-05-31"
 version = "HEAD-4857eb4"
 author = "Flamboyant_Ham"
-cpu = ""
-gpu = ""
+cpu = "Intel Core i7-4720HQ"
+gpu = "GeForce GTX 960M"
+os = "Windows 10 14393"

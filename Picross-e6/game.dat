@@ -9,9 +9,10 @@ region = "EUR"
 release_date = "2015-06-30"
 
 [[ testcases ]]
-compatibility = "1"
+compatibility = "0"
 date = "2017-06-05"
 version = "HEAD-8f0a23b"
 author = "SonofUgly"
 cpu = ""
 gpu = ""
+os = ""

@@ -1,5 +1,6 @@
 title = "Puyo Puyo Chronicles"
 description = "Puyo Puyo Chronicles is a game for the Nintendo 3DS as part of a celebration of Puyo Puyo's 25th Anniversary. Barring spinoffs, this is first Puyo game to be presented with 3D characters as opposed to 2D portraits."
+github_issues = [2398]
 needs_system_files = true
 needs_shared_font = true
 
@@ -16,3 +17,4 @@ version = "HEAD-8f0a23b"
 author = "Clector"
 cpu = ""
 gpu = ""
+os = ""

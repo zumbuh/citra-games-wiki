@@ -1,5 +1,6 @@
 title = "Pokémon Mystery Dungeon: Gates to Infinity"
 description = "Pokémon Mystery Dungeon: Gates to Infinity is a role-playing game in the Pokémon franchise developed by Spike Chunsoft and published by Nintendo for the Nintendo 3DS. It is the ninth installment in the Pokémon Mystery Dungeon series."
+github_issues = [2104]
 needs_system_files = false
 needs_shared_font = false
 
@@ -20,3 +21,4 @@ version = "HEAD-8f0a23b"
 author = "jselby"
 cpu = ""
 gpu = ""
+os = ""

@@ -1,5 +1,6 @@
 title = "Pokémon Omega Ruby and Alpha Sapphire"
 description = "Pokémon Omega Ruby and Alpha Sapphire are two 2014 role-playing video games developed by Game Freak and published by Nintendo for the Nintendo 3DS family of systems. They are part of the sixth generation of the Pokémon series, serving as enhanced remakes of the 2002 Game Boy Advance titles Pokémon Ruby and Sapphire."
+github_issues = [2419]
 needs_system_files = true
 needs_shared_font = true
 
@@ -18,5 +19,6 @@ compatibility = "1"
 date = "2017-05-31"
 version = "HEAD-4857eb4"
 author = "Flamboyant_Ham"
-cpu = ""
-gpu = ""
+cpu = "Intel Core i7-4720HQ"
+gpu = "GeForce GTX 960M"
+os = "Windows 10 14393"
