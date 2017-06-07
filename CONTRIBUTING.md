@@ -43,26 +43,36 @@ The metadata for the game is located at `/<Game Name>/game.dat`. This is require
   - `date` (String): Last date the game was tested on.
   - `version` (String): Last version of Citra the game was tested on.
   - `author` (String): Your forum account name, if you have one. If you don't, don't include this line.
+  - `cpu` (String): List your CPU following the example provided.
+  - `gpu` (String: List your GPU as recognized by Citra in the terminal.
+  - `os` (String): List your OS and version number following the example provided.
 
-An example of a game metadata file is the one for [The Legend of Zelda: Ocarina of Time](https://github.com/citra-emu/citra-games-wiki/blob/master/Legend-of-Zelda-Ocarina-of-Time/game.dat):
+An example of a game metadata file is the one for [The Legend of Zelda: Majora's Mask](https://github.com/citra-emu/citra-games-wiki/blob/master/Legend-of-Zelda-Majoras-Mask/game.dat):
 ```js
-title = "The Legend of Zelda: Ocarina of Time 3D"
-description = "The Legend of Zelda: Ocarina of Time 3D is an action-adventure video game co-developed by Grezzo and Nintendo EAD Tokyo and published by Nintendo for the Nintendo 3DS handheld game console. The game was released worldwide in June 2011."
+title = "The Legend of Zelda: Majora's Mask 3D"
+description = "The Legend of Zelda: Majora's Mask 3D is an action-adventure video game co-developed by Grezzo and Nintendo for the Nintendo 3DS handheld game console. The game is an enhanced remake of The Legend of Zelda: Majora's Mask, which was originally released for the Nintendo 64 home console in 2000. The game was released worldwide in February 2015"
+github_issues = [2517]
 needs_system_files = false
 needs_shared_font = false
 
 [[ releases ]]
-title = "0004000000033500"
+title = "0004000000125500"
 region = "USA"
-release_date = "2011-06-19"
+release_date = "2015-02-13"
+
+[[ releases ]]
+title = "0004000000125600"
+region = "EUR"
+release_date = "2015-02-13"
 
 [[ testcases ]]
-compatibility = "0"
+compatibility = "1"
 date = "2017-06-03"
 version = "HEAD-a7ddec8"
 author = "Flamboyant_Ham"
-cpu = ""
-gpu = ""
+cpu = "Intel Core i7-4720HQ"
+gpu = "GeForce GTX 960M"
+os = "Windows 10 14393"
 ```
 
 ### Icon
