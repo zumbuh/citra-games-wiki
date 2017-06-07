@@ -1,0 +1,9 @@
+{
+  "directory": "..",
+  "regions": ["JPN", "USA", "EUR", "AUS", "CHN", "KOR", "TWN"],
+  "boxart": { "filename": "boxart.png", "width": 328, "height": 300, "type": "image/png"},
+  "icon": { "filename": "icon.png", "width": 48, "height": 48, "type": "image/png"},
+  "screenshots": { "dirname": "screenshots", "width": 400, "height": 480, "type": "image/png"},
+  "saves": { "dirname": "savefiles"},
+  "data": { "filename": "game.dat" }
+}
