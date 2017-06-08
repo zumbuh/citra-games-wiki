@@ -36,6 +36,8 @@ The metadata for the game is located at `/<Game Name>/game.dat`. This is require
     - `KOR`
     - `TWN`
     - `USA`
+    - `ALL`
+      - Don't tag a game released in multiple regions as `ALL`. This is reserved for specific games released as such.
   - `release_date` (String): When the game was released in this region.
   
 - `testcases` (Array of tables): Info about each submitted test case.
