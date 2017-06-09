@@ -93,8 +93,18 @@ The boxart for the game is located at `/<Game Name>/boxart.png`. The suggested p
 - Downsize it to approximately `328x300` using [PicResize](http://www.picresize.com/).
 - Compress it using [TinyPNG](https://tinypng.com/).
 
-The required process for getting virtual console/eShop only boxart is:
+The required process for getting eShop only boxart is:
 - Run the game in Citra.
+- Use 1x internal resolution.
+- Increase the window size of Citra to fill most of your monitor.
+- Screenshot the title screen, which should only be the top screen.
+- Downsize it to approximately `500x300` using [PicResize](http://www.picresize.com/).
+- Compress it using [TinyPNG](https://tinypng.com/).
+- Examples are [Legend of Zelda](https://github.com/citra-emu/citra-games-wiki/blob/master/Virtual-Console-Legend-of-Zelda/boxart.png) and [Tetris](https://github.com/citra-emu/citra-games-wiki/blob/master/Virtual-Console-Tetris/boxart.png)
+
+The required process for getting virtual console boxart is:
+- Run the game in Citra.
+- Use 1x internal resolution.
 - Increase the window size of Citra to fill most of your monitor.
 - Screenshot the title screen, which should only be the top screen.
 - Downsize it to approximately `328x300` using [PicResize](http://www.picresize.com/).
