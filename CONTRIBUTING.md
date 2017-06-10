@@ -41,6 +41,7 @@ The metadata for the game is located at `/<Game Name>/game.dat`. This is require
   - `release_date` (String): When the game was released in this region.
   
 - `testcases` (Array of tables): Info about each submitted test case.
+  - `title` (String): Title ID of this release of the game which was used during testing.
   - `compatibility` (String): How well the game works in Citra. A reference can be found [here](https://citra-emu.org/game/), with `Won't Boot` being `"5"`, and `Perfect` being `"0"`.
   - `date` (String): Last date the game was tested on.
   - `version` (String): Last version of Citra the game was tested on.
@@ -50,7 +51,7 @@ The metadata for the game is located at `/<Game Name>/game.dat`. This is require
   - `os` (String): List your OS and version number following the example provided.
 
 An example of a game metadata file is the one for [The Legend of Zelda: Majora's Mask](https://github.com/citra-emu/citra-games-wiki/blob/master/Legend-of-Zelda-Majoras-Mask/game.dat):
-```js
+```toml
 title = "The Legend of Zelda: Majora's Mask 3D"
 description = "The Legend of Zelda: Majora's Mask 3D is an action-adventure video game co-developed by Grezzo and Nintendo for the Nintendo 3DS handheld game console. The game is an enhanced remake of The Legend of Zelda: Majora's Mask, which was originally released for the Nintendo 64 home console in 2000. The game was released worldwide in February 2015"
 github_issues = [2517]
@@ -68,6 +69,7 @@ region = "EUR"
 release_date = "2015-02-13"
 
 [[ testcases ]]
+title = "0004000000125500"
 compatibility = "1"
 date = "2017-06-03"
 version = "HEAD-a7ddec8"
