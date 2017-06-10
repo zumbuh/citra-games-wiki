@@ -5,19 +5,20 @@ needs_shared_font = false
 
 [[ releases ]]
 title = "00040000000cbc00"
-region = "EUR"
+region = "eur"
 release_date = "2013-01-24"
 
 [[ releases ]]
 title = "0004000000084600"
-region = "JPN"
+region = "jpn"
 release_date = "2011-12-28"
 
 [[ testcases ]]
+title = "00040000000cbc00"
 compatibility = "0"
 date = "2017-06-05"
 version = "HEAD-8f0a23b"
 author = "SonofUgly"
-cpu = ""
-gpu = ""
-os = ""
+cpu = "?"
+gpu = "?"
+os = "?"

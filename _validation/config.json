@@ -1,9 +1,11 @@
 {
   "directory": "..",
-  "regions": ["JPN", "USA", "EUR", "AUS", "CHN", "KOR", "TWN", "ALL"],
-  "boxart": { "filename": "boxart.png", "width": 328, "height": 300, "type": "image/png"},
-  "icon": { "filename": "icon.png", "width": 48, "height": 48, "type": "image/png"},
-  "screenshots": { "dirname": "screenshots", "width": 400, "height": 480, "type": "image/png"},
+  "regions": ["jpn", "usa", "eur", "aus", "chn", "kor", "twn", "all"],
+  "gametypes": ["vc", "dsi", "eshop"],
+  "vc-systems": ["nes", "snes", "gb", "gbc", "gba", "gg"],
+  "boxart": { "filename": "boxart.png", "sizes": [{"width": 328, "height": 300}, {"width": 500, "height": 300}], "type": "image/png"},
+  "icon": { "filename": "icon.png", "sizes": [{"width": 48, "height": 48}], "type": "image/png"},
+  "screenshots": { "dirname": "screenshots", "sizes": [{"width": 400, "height": 480}], "type": "image/png"},
   "saves": { "dirname": "savefiles"},
   "data": { "filename": "game.dat" }
 }

@@ -6,14 +6,15 @@ needs_shared_font = true
 
 [[ releases ]]
 title = "0004000000126300"
-region = "USA"
+region = "usa"
 release_date = "2015-02-13"
 
 [[ testcases ]]
+title = "0004000000126300"
 compatibility = "3"
 date = "2017-06-05"
 version = "HEAD-bae3799"
 author = "Desmond"
-cpu = ""
-gpu = ""
-os = ""
+cpu = "?"
+gpu = "?"
+os = "?"

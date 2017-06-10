@@ -5,24 +5,25 @@ needs_shared_font = true
 
 [[ releases ]]
 title = "000400000010BE00"
-region = "JPN"
+region = "jpn"
 release_date = "2014-01-11"
 
 [[ releases ]]
 title = "000400000010BF00"
-region = "USA"
+region = "usa"
 release_date = "2014-05-02"
 
 [[ releases ]]
 title = "000400000010C000"
-region = "EUR"
+region = "eur"
 release_date = "2014-05-16"
 
 [[ testcases ]]
+title = "000400000010BF00"
 compatibility = "1"
 date = "2017-06-05"
 version = "HEAD-8f0a23b"
 author = "Clector"
-cpu = ""
-gpu = ""
-os = ""
+cpu = "?"
+gpu = "?"
+os = "?"

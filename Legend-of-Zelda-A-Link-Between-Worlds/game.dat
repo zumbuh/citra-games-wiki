@@ -6,14 +6,15 @@ needs_shared_font = false
 
 [[ releases ]]
 title = "00040000000EC300"
-region = "USA"
+region = "usa"
 release_date = "2013-11-22"
 
 [[ testcases ]]
+title = "00040000000EC300"
 compatibility = "1"
 date = "2017-06-03"
 version = "HEAD-e46ec64"
 author = "Leo121"
-cpu = ""
-gpu = ""
-os = ""
+cpu = "?"
+gpu = "?"
+os = "?"

@@ -6,14 +6,15 @@ needs_shared_font = false
 
 [[ releases ]]
 title = "0004000000030800"
-region = "USA"
+region = "usa"
 release_date = "2011-12-04"
 
 [[ testcases ]]
+title = "0004000000030800"
 compatibility = "3"
 date = "2017-06-03"
 version = "HEAD-a7ddec8"
 author = "TheKoopaKingdom"
-cpu = ""
-gpu = ""
-os = ""
+cpu = "?"
+gpu = "?"
+os = "?"

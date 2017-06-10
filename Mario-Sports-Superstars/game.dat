@@ -4,10 +4,11 @@ github_issues = [2660]
 
 [[ releases ]]
 title = "0004000000188C00"
-region = "USA"
+region = "usa"
 release_date = "2017-03-06"
 
 [[ testcases ]]
+title = "0004000000188C00"
 compatibility = "5"
 date = "2017-06-03"
 version = "HEAD-a7ddec8"

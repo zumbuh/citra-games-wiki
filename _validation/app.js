@@ -35,10 +35,24 @@ function validateImage(path, config) {
         }
 
         let dimensions = sizeOf(path);
-        if (dimensions.width !== config.width || dimensions.height !== config.height) {
-            validationError(`Image \"${path}\"'s dimensions are ${dimensions.width} x ${dimensions.height} ` +
-                            `instead of the required ${config.width} x ${config.height}.`);
+        let sizesString = "";
+
+        for (sizeIndex in config.sizes) {
+            const size = config.sizes[sizeIndex];
+
+            if (dimensions.width === size.width && dimensions.height === size.height) {
+                return;
+            }
+
+            // Really beautiful multi-size printing. Work of art.
+            if (sizesString.length !== 0) {
+                sizesString += ", ";
+            }
+            sizesString += `${size.width} x ${size.height}`;
         }
+
+        validationError(`Image \"${path}\"'s dimensions are ${dimensions.width} x ${dimensions.height} ` +
+               `instead of the any of the following: ${sizesString}`);
     }
 }
 
@@ -147,6 +161,22 @@ function validateTOML(path) {
         });
     }
 
+    if (tomlDoc["gametypes"] !== undefined) {
+        validateContents(tomlDoc, "gametypes", field => {
+            if (config.gametypes.indexOf(field) === -1) {
+                validationError(`Could not find gametype \"${field}\"!`);
+            }
+
+            if (field === "vc") {
+                validateContents(tomlDoc, "vc_system", field => {
+                    if (config.vc-systems.indexOf(field) === -1) {
+                        validationError(`Could not find VC console \"${field}\"!`);
+                    }
+                });
+            }
+        });
+    }
+
     let section;
     let i;
 
@@ -183,6 +213,14 @@ function validateTOML(path) {
         for (i = 0; i < section.length; i++) {
             const testcase = section[i];
 
+            validateContents(testcase, "title", field => {
+                if (field.length !== 16) {
+                    validationError(`Testcase #${i + 1}: Game title ID has an invalid length`);
+                } else if (!field.match(/([a-zA-Z0-9]){16}/)) {
+                    validationError(`Testcase #${i + 1}: Game title ID is not a hexadecimal ID`);
+                }
+            });
+
             validateNotEmpty(testcase, "compatibility");
             if (testcase["compatibility"] !== undefined) {
                 let compat = parseInt(testcase["compatibility"]);
@@ -201,7 +239,9 @@ function validateTOML(path) {
             });
             validateNotEmpty(testcase, "author");
 
-            // TODO: CPU/GPU/OS fields
+            validateNotEmpty(testcase, "cpu");
+            validateNotEmpty(testcase, "gpu");
+            validateNotEmpty(testcase, "os");
         }
     } else {
         validationError("No testcases.")
