@@ -4,6 +4,11 @@ needs_system_files = false
 needs_shared_font = false
 
 [[ releases ]]
+title = "00040000000e5d00"
+region = "usa"
+release_date = "2013-06-13"
+
+[[ releases ]]
 title = "00040000000e9200"
 region = "eur"
 release_date = "2012-09-06"
@@ -19,6 +24,6 @@ compatibility = "0"
 date = "2017-06-05"
 version = "HEAD-8f0a23b"
 author = "SonofUgly"
-cpu = "?"
-gpu = "?"
-os = "?"
+cpu = "i5-6600k @ 4.3GHz"
+gpu = "GeForce GTX 750Ti"
+os = "Windows 8.1"

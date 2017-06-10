@@ -8,12 +8,17 @@ title = "00040000001adb00"
 region = "usa"
 release_date = "2016-12-15"
 
+[[ releases ]]
+title = "00040000001ad600"
+region = "eur"
+release_date = "2016-12-22"
+
 [[ testcases ]]
 title = "00040000001adb00"
 compatibility = "0"
 date = "2017-06-05"
 version = "HEAD-8f0a23b"
 author = "SonofUgly"
-cpu = "?"
-gpu = "?"
-os = "?"
+cpu = "i5-6600k @ 4.3GHz"
+gpu = "GeForce GTX 750Ti"
+os = "Windows 8.1"
