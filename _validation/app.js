@@ -44,24 +44,26 @@ function validateImage(path, config) {
         }
 
         let dimensions = sizeOf(path);
-        let sizesString = "";
 
-        for (sizeIndex in config.sizes) {
+        for (const sizeIndex in config.sizes) {
             const size = config.sizes[sizeIndex];
 
             if (dimensions.width === size.width && dimensions.height === size.height) {
                 return;
             }
-
-            // Really beautiful multi-size printing. Work of art.
-            if (sizesString.length !== 0) {
-                sizesString += ", ";
-            }
-            sizesString += `${size.width} x ${size.height}`;
         }
 
+        // Build our error message
+        let possibleSizes = config.sizes.reduce((acc, curVal) => {
+            if (acc.length !== 0) {
+                acc += ", ";
+            }
+            acc += `${curVal.width} x ${curVal.height}`;
+            return acc;
+        }, "");
+
         validationError(`Image \"${path}\"'s dimensions are ${dimensions.width} x ${dimensions.height} ` +
-               `instead of the any of the following: ${sizesString}`);
+               `instead of the any of the following: ${possibleSizes}`);
     }
 }
 
@@ -75,13 +77,10 @@ function validateDirImages(path, config) {
         files.forEach(file => {
             if (!isValidFilename(file)) {
                 validationError(`File \"${file}\" contains bad characters!`);
+            } else {
+                validateImage(`${path}/${file}`, config);
             }
         });
-
-        for (let i = 0; i < files.length; i++) {
-            const file = files[i];
-            validateImage(`${path}/${file}`, config);
-        }
     }
 }
 
@@ -167,11 +166,11 @@ function validateTOML(path) {
                 validationError("Github issues field is not an array!")
             } else {
                 // Validate each individual entry
-                for (x in field) {
-                    if (typeof field[x] !== "number") {
+                field.forEach(elem => {
+                    if (typeof elem !== "number") {
                         validationError("Github issues entry is not a number!")
                     }
-                }
+                });
             }
         });
     }
@@ -198,9 +197,7 @@ function validateTOML(path) {
     // Check each release individually
     if (tomlDoc["releases"] !== undefined) {
         section = tomlDoc["releases"];
-        for (i = 0; i < section.length; i++) {
-            const release = section[i];
-
+        section.forEach(release => {
             validateContents(release, "title", field => {
                 if (field.length !== 16) {
                     validationError(`Release #${i + 1}: Game title ID has an invalid length`);
@@ -214,8 +211,7 @@ function validateTOML(path) {
                 }
             });
             validateIsDate(release, "release_date");
-
-        }
+        });
     } else {
         validationError("No releases.")
     }
@@ -225,9 +221,7 @@ function validateTOML(path) {
     // Check each testcase individually
     if (tomlDoc["testcases"] !== undefined) {
         section = tomlDoc["testcases"];
-        for (i = 0; i < section.length; i++) {
-            const testcase = section[i];
-
+        section.forEach(testcase => {
             validateContents(testcase, "title", field => {
                 if (field.length !== 16) {
                     validationError(`Testcase #${i + 1}: Game title ID has an invalid length`);
@@ -257,7 +251,7 @@ function validateTOML(path) {
             validateNotEmpty(testcase, "cpu");
             validateNotEmpty(testcase, "gpu");
             validateNotEmpty(testcase, "os");
-        }
+        });
     } else {
         validationError("No testcases.")
     }
@@ -330,15 +324,14 @@ function validateSaves(dir) {
     });
 
     // Check each group
-    for (let i = 0; i < groups.length; i++) {
-        const group = groups[i];
+    groups.forEach(group => {
         if (validateFileExists(`${dir}/${group}.dat`)) {
             validateSaveTOML(`${dir}/${group}.dat`);
         }
         if (validateFileExists(`${dir}/${group}.zip`)) {
             validateSaveZip(`${dir}/${group}.zip`);
         }
-    }
+    });
 }
 
 function validationError(err) {
@@ -404,9 +397,9 @@ if (errors.length > 0 || miscError) {
 
         console.info(`  ${key}:`);
 
-        for (let issueKey in group) {
-            console.info(`   - ${group[issueKey].error}`);
-        }
+        group.forEach(issue => {
+            console.info(`   - ${issue.error}`);
+        });
     }
 
     process.exit(1);
