@@ -12,6 +12,9 @@ const toml = require('toml');
 let currentGame = null;
 let errors = [];
 
+// Catch non-formatting errors
+let miscError = false;
+
 function getDirectories(srcpath) {
     return fs.readdirSync(srcpath)
         .filter(file => fs.lstatSync(path.join(srcpath, file)).isDirectory())
@@ -20,6 +23,12 @@ function getDirectories(srcpath) {
 function getFiles(srcpath) {
     return fs.readdirSync(srcpath)
         .filter(file => fs.lstatSync(path.join(srcpath, file)).isFile())
+}
+
+/// Check that a filename matches the following:
+/// [any of a-z, A-Z, 0-9, a '-' or a '_'](one or more) . [a-z](two or three)
+function isValidFilename(name) {
+    return name.match(/^([a-zA-Z0-9_\-])+\.([a-z]){2,3}$/);
 }
 
 /// Validates that a image is correctly sized and of the right format.
@@ -62,6 +71,12 @@ function validateDirImages(path, config) {
     // TODO: Do we want to enforce having screenshots?
     if (fs.existsSync(path)) {
         const files = getFiles(path);
+
+        files.forEach(file => {
+            if (!isValidFilename(file)) {
+                validationError(`File \"${file}\" contains bad characters!`);
+            }
+        });
 
         for (let i = 0; i < files.length; i++) {
             const file = files[i];
@@ -113,7 +128,7 @@ function validateIsBoolean(struct, name) {
 /// Validates pattern of YYYY-MM-DD in a field of a structure.
 function validateIsDate(struct, name) {
     validateContents(struct, name, field => {
-        if (!field.match(/[0-9]{4}-((0[1-9])|(1[0-2]))-((0[1-9])|([1-2][0-9])|(3[0-1]))/)) {
+        if (!field.match(/^[0-9]{4}-((0[1-9])|(1[0-2]))-((0[1-9])|([1-2][0-9])|(3[0-1]))$/)) {
             validationError(`\"${name}\" is not a valid date (\"${field}\").`);
         }
     });
@@ -189,7 +204,7 @@ function validateTOML(path) {
             validateContents(release, "title", field => {
                 if (field.length !== 16) {
                     validationError(`Release #${i + 1}: Game title ID has an invalid length`);
-                } else if (!field.match(/([a-zA-Z0-9]){16}/)) {
+                } else if (!field.match(/^([a-zA-Z0-9]){16}$/)) {
                     validationError(`Release #${i + 1}: Game title ID is not a hexadecimal ID`);
                 }
             });
@@ -216,7 +231,7 @@ function validateTOML(path) {
             validateContents(testcase, "title", field => {
                 if (field.length !== 16) {
                     validationError(`Testcase #${i + 1}: Game title ID has an invalid length`);
-                } else if (!field.match(/([a-zA-Z0-9]){16}/)) {
+                } else if (!field.match(/^([a-zA-Z0-9]){16}$/)) {
                     validationError(`Testcase #${i + 1}: Game title ID is not a hexadecimal ID`);
                 }
             });
@@ -273,7 +288,7 @@ function validateSaveTOML(path) {
     validateContents(tomlDoc, "title_id", field => {
         if (field.length !== 16) {
             validationError(`Game save data: Game title ID has an invalid length`);
-        } else if (!field.match(/([a-zA-Z0-9]){16}/)) {
+        } else if (!field.match(/^([a-zA-Z0-9]){16}$/)) {
             validationError(`Game save data: Game title ID is not a hexadecimal ID`);
         }
     });
@@ -298,6 +313,12 @@ function validateSaves(dir) {
     }
 
     const files = getFiles(dir);
+
+    files.forEach(file => {
+        if (!isValidFilename(file)) {
+            validationError(`File \"${file}\" contains bad characters!`);
+        }
+    });
 
     // Strip extensions, so we know what save 'groups' we are dealing with
     const strippedFiles = files.map(file => {
@@ -334,6 +355,13 @@ getDirectories(config.directory).forEach(function (game) {
         let inputDirectoryGame = `${config.directory}/${game}`;
         currentGame = game;
 
+        // Check that everything is lowercase.
+        getFiles(inputDirectoryGame).forEach(file => {
+            if (!isValidFilename(file)) {
+                validationError(`File \"${file}\" contains bad characters!`);
+            }
+        });
+
         // Verify the game's boxart.
         validateImage(`${inputDirectoryGame}/${config.boxart.filename}`, config.boxart);
 
@@ -353,10 +381,11 @@ getDirectories(config.directory).forEach(function (game) {
     } catch (ex) {
         console.warn(`${game} has encountered an unexpected error.`);
         console.error(ex);
+        miscError = true;
     }
 });
 
-if (errors.length > 0) {
+if (errors.length > 0 || miscError) {
     console.warn('Validation completed with errors.');
 
     const groups = groupBy(errors, "game");
