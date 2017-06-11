@@ -9,13 +9,12 @@ title = "0004000000197500"
 region = "jpn"
 release_date = "2016-12-08"
 
-
 [[ testcases ]]
 title = "0004000000197500"
 compatibility = "5"
 date = "2017-06-05"
 version = "HEAD-8f0a23b"
 author = "Clector"
-cpu = "?"
-gpu = "?"
-os = "?"
+cpu = "Intel Core i3-4160"
+gpu = "Intel HD Graphics 4400"
+os = "Windows 8.1"
