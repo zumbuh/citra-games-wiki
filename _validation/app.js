@@ -184,7 +184,7 @@ function validateTOML(path) {
 
             if (field === "vc") {
                 validateContents(tomlDoc, "vc_system", field => {
-                    if (config.vc-systems.indexOf(field) === -1) {
+                    if (config.vc_systems.indexOf(field) === -1) {
                         validationError(`Could not find VC console \"${field}\"!`);
                     }
                 });
@@ -355,10 +355,19 @@ getDirectories(config.directory).forEach(function (game) {
         let inputDirectoryGame = `${config.directory}/${game}`;
         currentGame = game;
 
-        // Check that everything is lowercase.
+        // Check that everything is lowercase and is a known file.
         getFiles(inputDirectoryGame).forEach(file => {
-            if (!isValidFilename(file)) {
+            if (config.permitted_files.indexOf(file) === -1) {
+                validationError(`Unknown file \"${file}\"!`);
+            } else if (!isValidFilename(file)) {
                 validationError(`File \"${file}\" contains bad characters!`);
+            }
+        });
+
+        // Check that all directories are known.
+        getDirectories(inputDirectoryGame).forEach(file => {
+            if (config.permitted_dirs.indexOf(file) === -1) {
+                validationError(`Unknown directory \"${file}\"!`);
             }
         });
 
