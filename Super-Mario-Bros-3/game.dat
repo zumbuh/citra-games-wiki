@@ -3,6 +3,8 @@ description = "Super Mario Bros. 3 (Japanese: スーパーマリオブラザー�
 github_issues = [2552]
 needs_system_files = false
 needs_shared_font = true
+game_type = "vc"
+vc_system = "nes"
 
 [[ releases ]]
 title = "000400000006e700"
