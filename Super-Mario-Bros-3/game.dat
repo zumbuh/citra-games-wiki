@@ -1,4 +1,4 @@
-title = "Virtual Console: Super Mario Bros. 3"
+title = "Super Mario Bros. 3"
 description = "Super Mario Bros. 3 (Japanese: スーパーマリオブラザーズ3 Hepburn: Sūpā Mario Burazāzu Surī) is a platform video game developed and published by Nintendo for the Nintendo Entertainment System (NES) video game console"
 github_issues = [2552]
 needs_system_files = false

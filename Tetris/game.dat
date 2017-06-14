@@ -1,4 +1,4 @@
-title = "Virtual Console: Tetris"
+title = "Tetris"
 description = "Tetris is a puzzle video game for the Game Boy released in 1989.  A Nintendo 3DS Virtual Console version of Tetris was released in December 2011 and lacks the multiplayer functionality. It was delisted from the Nintendo eShop after December 31, 2014."
 github_issues = [2552]
 needs_system_files = false

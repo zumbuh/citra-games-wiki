@@ -1,4 +1,4 @@
-title = "Virtual Console: Super Mario Bros. 2"
+title = "Super Mario Bros. 2"
 description = "Super Mario Bros. 2 is a platform game developed and published by Nintendo. The objective of the game is to navigate the player's character through the dream world Subcon and defeat the main antagonist Wart."
 github_issues = [2552]
 needs_system_files = false
