@@ -4,7 +4,7 @@ github_issues = [2552]
 needs_system_files = false
 needs_shared_font = true
 game_type = "vc"
-vc_system = "nes"
+vc_system = "gb"
 
 [[ releases ]]
 title = "000400000007e700"
