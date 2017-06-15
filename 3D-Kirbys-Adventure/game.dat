@@ -2,6 +2,7 @@ title = "3D Classics: Kirby's Adventure"
 description = "Kirby's Adventure is a 1993 action-platform video game developed by HAL Laboratory and published by Nintendo for the Nintendo Entertainment System video game console. A 3D Classics version was released for the Nintendo 3DS eShop in November 2011."
 needs_system_files = false
 needs_shared_font = true
+game_type = "eshop"
 
 [[ releases ]]
 title = "0004000000054600"

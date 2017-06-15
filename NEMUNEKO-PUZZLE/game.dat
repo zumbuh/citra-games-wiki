@@ -2,6 +2,7 @@ title = "NEMUNEKO PUZZLE"
 description = "NEMUNEKO PUZZLE (ねむネコ パズルでも寝ています, Nemuneko Pazurudemoneteimasu) is a chill-out puzzle video game developed and published by FuRyu for the Nintendo 3DS."
 needs_system_files = false
 needs_shared_font = false
+game_type = "eshop"
 
 [[ releases ]]
 title = "00040000001b6700"

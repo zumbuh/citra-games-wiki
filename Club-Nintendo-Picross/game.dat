@@ -2,6 +2,7 @@ title = "Club Nintendo Picross"
 description = "Club Nintendo Picross is a Japan and South Korea-only Nintendo 3DS eShop Picross title. The game is much similar in style to Mario's Picross, as its made by the same developer, Jupiter."
 needs_system_files = false
 needs_shared_font = false
+game_type = "eshop"
 
 [[ releases ]]
 title = "00040000000bb500"
