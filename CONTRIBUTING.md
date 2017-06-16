@@ -3,13 +3,31 @@ Contributions to the Citra Games Wiki are welcomed, as keeping all of the data u
  - [Code](#code)
  - [Wiki](#wiki)
 
+## Info About This Wiki
+
+### Angle Brackets
 Throughout this guide, code blocks like `<Value>` are used. This means that "Value" should be replaced by something, and the "<>" should be deleted.
 
-In this repo, DAT files follow the TOML syntax, where each line consists of `<key> = <value>`. Value can either be a string (Words with surrounding quotes.), an integer (Number with no quotes.), or a boolean (`true` or `false`.). There can also be an array of tables in a DAT file (A group of values.), which look like `[[ <name> ]]`.
+### Dates
 
 All dates follow the format `<4-Digit Year>-<2-Digit Month>-<2-Digit Day>`. For example, June 3rd 2017 would be "2017-06-03".
 
-Title IDs can be found near the top of a log when running a game. For example, this is what it looks like for The Legend of Zelda: Ocarina of Time: `[   0.019882] Loader <Info> core/loader/ncch.cpp:Load:340: Program ID: 0004000000033500`.
+### Title IDs
+
+Title IDs can be found near the top of a log when running a game. For example, this is what it looks like for The Legend of Zelda: Ocarina of Time, 0004000000033500: `[   0.019882] Loader <Info> core/loader/ncch.cpp:Load:340: Program ID: 0004000000033500`.
+
+### TOML
+
+In this repo, DAT files follow the [TOML](https://github.com/toml-lang/toml) syntax, where each line consists of the creation of a peice of data. The simplest form of this is assigning a value to a key (`<Key> = <Value>`). The data types used for these `Value`s in this wiki are:
+ - Booleans, true or false (Example: `true`.)
+ - Integers, numbers (Example: `5`.)
+ - Strings, characters with surrounding quotes (Example: `"Hi!"`.)
+ - Arrays, collection of booleans, integers, or strings (Example for an array of integers: `[33, 2398, 234]`.)
+ 
+ These key/value pairs can be grouped together using an array of tables (Example: `[[ Stuff ]]`, with the pairs on the next lines.). These can be used more than once in a TOML file.
+ 
+### GitHub Issues
+Game issues can be found [here](https://github.com/citra-emu/citra/issues). The ID of the issue can be found at the end of the URL. For example, [SNES Virtual Console Games - Crash on Boot](https://github.com/citra-emu/citra/issues/2782)'s ID is 2782.
 
 ## Code
 The code consists of the actual files in the Github repisitory. To modify them, you have to fork this repo, make your changes, and send a pull request.
@@ -20,14 +38,15 @@ At the root, there's a folder for each game. The names of these folders should f
 - Have a wiki page with the same name.
 
 ### Metadata
-The metadata for the game is located at `/<Game Name>/game.dat`. This is required info about the game. The DAT values are:
-- `title` (String): English title of the game. This doesn't have to match the wiki or foldeer name, so there can be spaces.
+The metadata for the game is located at `/<Game Name>/game.dat`. This is required info about the game. The DAT values (See: [TOML](#toml)) are:
+- `title` (String): English title of the game. This doesn't have to match the wiki or folder name, so there can be spaces.
 - `description` (String): Get these from [Wikipedia](https://en.wikipedia.org/wiki/List_of_Nintendo_3DS_games). Short, 1-2 line description of the game.
+- `github_issues` (Array of integers): The GitHub issue IDs for the game. See: [GitHub Issues](#github-issues).
 - `needs_system_files` (Boolean): Whether the game requests the system files or not, regardless of whether it could be played without them.
 - `needs_shared_font` (Boolean): Whether the game requests the shared font or not, regardless of whether it could be played without them.
 
 - `releases` (Array of tables): Info about each release of the game.
-  - `title` (String): Title ID of this release of the game.
+  - `title` (String): Title ID of this release of the game. See: [Title IDs](#title-ids).
   - `region` (String): Region of the game. Possible values are:
     - `AUS`
     - `CHN`
@@ -38,12 +57,12 @@ The metadata for the game is located at `/<Game Name>/game.dat`. This is require
     - `USA`
     - `ALL`
       - Don't tag a game released in multiple regions as `ALL`. This is reserved for specific games released as such.
-  - `release_date` (String): When the game was released in this region.
+  - `release_date` (String): When the game was released in this region. See: [Dates](#dates).
   
 - `testcases` (Array of tables): Info about each submitted test case.
-  - `title` (String): Title ID of this release of the game which was used during testing.
+  - `title` (String): Title ID of this release of the game which was used during testing. See: [Title IDs](#title-ids).
   - `compatibility` (String): How well the game works in Citra. A reference can be found [here](https://citra-emu.org/game/), with `Won't Boot` being `"5"`, and `Perfect` being `"0"`.
-  - `date` (String): Last date the game was tested on.
+  - `date` (String): Last date the game was tested on. See: [Dates](#dates).
   - `version` (String): Last version of Citra the game was tested on.
   - `author` (String): Your forum account name, if you have one. If you don't, don't include this line.
   - `cpu` (String): List your CPU following the example provided.
@@ -124,7 +143,7 @@ The name of the screenshot doesn't matter.
 
 ### Savefiles
 #### Metadata
-The metadata for a save is located at `/<Game Name>/savefiles/<Save Name>.dat`. This is info about the save. The DAT values are:
+The metadata for a save is located at `/<Game Name>/savefiles/<Save Name>.dat`. This is info about the save. The DAT values (See: [TOML](#toml)) are:
 - `title` (String): The location of the save ingame.
 - `description` (String): A brief explanation about the save.
 - `author` (String): Your forum account name, if you have one. If you don't, don't include this line.
