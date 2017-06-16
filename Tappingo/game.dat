@@ -9,10 +9,6 @@ region = "eur"
 release_date = "2014-06-03"
 
 [[ releases ]]
-region = "jpn"
-release_date = "2015-01-28"
-
-[[ releases ]]
 title = "0004000000119800"
 region = "usa"
 release_date = "2014-02-27"
@@ -20,8 +16,9 @@ release_date = "2014-02-27"
 [[ testcases ]]
 title = "00040000000D5A00"
 compatibility = "1"
-date = "2017-06-14"
+date = "2017-06-16"
 version = "HEAD-8658bb7"
+author = "Stewartisme"
 cpu = "Intel Core i5-4460"
 gpu = "NVIDIA GeForce GTX 960"
 os = "Windows 7 Ultimate 64-bit"
