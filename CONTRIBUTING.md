@@ -2,6 +2,8 @@
 Contributions to the Citra Games Wiki are welcomed, as keeping all of the data up to date and accurate is a community effort. There are 2 parts to the Wiki:
  - [Code](#code)
  - [Wiki](#wiki)
+ 
+The recommended application for capturing the icon, boxart, and screenshots is [ShareX](https://github.com/ShareX/ShareX).
 
 ## Info About This Wiki
 
