@@ -14,7 +14,7 @@ region = "eur"
 release_date = "2012-06-15"
 
 [[ testcases ]]
-compatibility = "4"
+compatibility = "3"
 date = "2017-06-19"
 title = "0004000000074000"
 version = "HEAD-d0888f8"

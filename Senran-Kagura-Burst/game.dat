@@ -19,7 +19,7 @@ region = "jpn"
 release_date = "2012-08-30"
 
 [[ testcases ]]
-compatibility = "6"
+compatibility = "5"
 date = "2017-06-19"
 title = "00040000000F4500"
 version = "HEAD-d0888f8"
