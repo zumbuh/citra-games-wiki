@@ -1,0 +1,19 @@
+title = "Donkey Kong Country Returns 3D"
+description = "Donkey Kong Country Returns is a 2010 side-scrolling platformer videogame developed by Retro Studios and published by Nintendo for the Wii console. A stereoscopic port of the game, titled Donkey Kong Country Returns 3D, was released for the Nintendo 3DS in Europe and North America on May 24, 2013, in Australia on May 25, 2013, and in Japan on June 13, 2013."
+needs_system_files = false
+needs_shared_font = false
+
+[[ releases ]]
+title = "00040000000CCE00"
+region = "usa"
+release_date = "2013-05-24"
+
+[[ testcases ]]
+title = "00040000000CCE00"
+compatibility = "5"
+date = "2017-06-18"
+version = "HEAD-5fe5cca"
+author = "Anadian"
+cpu = "Intel Core i7-6500U"
+gpu = "Intel HD Graphics 520"
+os = "Windows 10 14393"

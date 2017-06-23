@@ -18,3 +18,13 @@ author = "Leo121"
 cpu = "Intel i5 4670k"
 gpu = "Nvidia GTX 970"
 os = "Windows 10 10.0.15063"
+
+[[ testcases ]]
+title = "00040000000EC300"
+compatibility = "1"
+date = "2017-06-18"
+version = "HEAD-5fe5cca"
+author = "Anadian"
+cpu = "Intel Core i7-6500U"
+gpu = "Intel HD Graphics 520"
+os = "Windows 10 14393"
