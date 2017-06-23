@@ -20,7 +20,7 @@ release_date = "2016-08-04"
 
 [[ testcases ]]
 title = "0004000000196D00"
-compatibility = "1"
+compatibility = "0"
 date = "2017-06-16"
 version = "HEAD-3146e95"
 author = "Krikic"
