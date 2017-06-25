@@ -2,8 +2,6 @@
 Contributions to the Citra Games Wiki are welcomed, as keeping all of the data up to date and accurate is a community effort. There are 2 parts to the Wiki:
  - [Code](#code)
  - [Wiki](#wiki)
- 
-The recommended application for capturing the icon, boxart, and screenshots is [ShareX](https://github.com/ShareX/ShareX).
 
 ## Info About This Wiki
 
@@ -31,6 +29,9 @@ In this repo, DAT files follow the [TOML](https://github.com/toml-lang/toml) syn
 ### GitHub Issues
 Game issues can be found [here](https://github.com/citra-emu/citra/issues). The ID of the issue can be found at the end of the URL. For example, [SNES Virtual Console Games - Crash on Boot](https://github.com/citra-emu/citra/issues/2782)'s ID is 2782.
 
+### Screenshots
+The recommended application for capturing the icon, boxart, and screenshots is [ShareX](https://github.com/ShareX/ShareX). Screenshots can not be compressed.
+
 ## Code
 The code consists of the actual files in the Github repisitory. To modify them, you have to fork this repo, make your changes, and send a pull request.
 
@@ -46,6 +47,7 @@ The metadata for the game is located at `/<Game Name>/game.dat`. This is require
 - `github_issues` (Array of integers): The GitHub issue IDs for the game. See: [GitHub Issues](#github-issues).
 - `needs_system_files` (Boolean): Whether the game requests the system files or not, regardless of whether it could be played without them.
 - `needs_shared_font` (Boolean): Whether the game requests the shared font or not, regardless of whether it could be played without them.
+- `game_type` (String): Whether the game has a retail release, `"3ds"`, is an E-Shop **exclusive**, `"eshop"`, a Virtual Console game, `"vc"`, or DSiWare, `"dsi"`.
 
 - `releases` (Array of tables): Info about each release of the game.
   - `title` (String): Title ID of this release of the game. See: [Title IDs](#title-ids).
@@ -101,13 +103,11 @@ os = "Windows 10 14393"
 ```
 
 ### Icon
-The icon for a game is located at `/<Game Name>/icon.png`. The suggested process for getting one is:
+The icon for a game is located at `/<Game Name>/icon.png` (See: [Screenshots](#screenshots). The suggested process for getting one is:
 - Make sure the ROM for the game is in your Citra game directory.
 - Take a screenshot of Citra's library listing.
 - Crop out the game icon.
 - The icon should be `48x48`.
-
-Game icons should not be compressed.
 
 ### Boxart
 The boxart for the game is located at `/<Game Name>/boxart.png`. The suggested process for getting retail boxart is:
@@ -135,11 +135,10 @@ The required process for getting virtual console boxart is:
 - Examples are [Legend of Zelda](https://github.com/citra-emu/citra-games-wiki/blob/master/Virtual-Console-Legend-of-Zelda/boxart.png) and [Tetris](https://github.com/citra-emu/citra-games-wiki/blob/master/Virtual-Console-Tetris/boxart.png)
 
 ### Screenshots
-The screenshots for the game are located in `/<Game Name>/screenshots/`. Screenshots **must** follow these specifications:
+The screenshots for the game are located in `/<Game Name>/screenshots/` (See: [Screenshots](#screenshots). Screenshots **must** follow these specifications:
   - Native resolution.
   - Smallest window size.
   - Black background (For the blank space left and right of the bottom screen.). To achieve this, go to the [User Directory](https://citra-emu.org/wiki/user-directory/), and from there navigate to the `config` directory. Open qt-config.ini with a text editor, and set bg_blue, bg_green, and bg_red to 0.
-  - Not compressed.
 
 The name of the screenshot doesn't matter.
 
