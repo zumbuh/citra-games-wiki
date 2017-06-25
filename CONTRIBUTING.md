@@ -52,15 +52,14 @@ The metadata for the game is located at `/<Game Name>/game.dat`. This is require
 - `releases` (Array of tables): Info about each release of the game.
   - `title` (String): Title ID of this release of the game. See: [Title IDs](#title-ids).
   - `region` (String): Region of the game. Possible values are:
-    - `AUS`
-    - `CHN`
-    - `EUR`
-    - `JPN`
-    - `KOR`
-    - `TWN`
-    - `USA`
-    - `ALL`
-      - Don't tag a game released in multiple regions as `ALL`. This is reserved for specific games released as such.
+    - `aus`
+    - `chn`
+    - `eur`
+    - `jpn`
+    - `kor`
+    - `twn`
+    - `usa`
+    - `all` (Don't tag a game released in multiple regions as `ALL`. This is reserved for specific games released as such.)
   - `release_date` (String): When the game was released in this region. See: [Dates](#dates).
   
 - `testcases` (Array of tables): Info about each submitted test case.
