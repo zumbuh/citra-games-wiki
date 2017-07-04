@@ -1,0 +1,25 @@
+title = "Puzzle & Dragons Z + Super Mario Bros. Edition"
+description = "Puzzle & Dragons Z + Super Mario Bros. Edition is a 2015 puzzle game for Nintendo 3DS developed by GungHo Online Entertainment. It is a compilation of Puzzle & Dragons Z and Puzzle & Dragons: Super Mario Bros. Edition from the Puzzle & Dragons series for North America and Europe."
+needs_system_files = false
+needs_shared_font = false
+game_type = "3ds"
+
+[[ releases ]]
+title = "0004000000137700"
+region = "usa"
+release_date = "2015-05-22"
+
+[[ releases ]]
+title = "0004000000137800"
+region = "eur"
+release_date = "2014-05-08"
+
+[[ testcases ]]
+title = "0004000000137700"
+compatibility = "0"
+date = "2017-07-04"
+version = "HEAD-22e7402"
+author = "DrewThatGamer"
+cpu = "Intel Core i5 6400"
+gpu = "NVIDIA GeForce GTX 1050"
+os = "Windows 10"
