@@ -59,7 +59,7 @@ The metadata for the game is located at `/<Game Name>/game.dat`. This is require
     - `kor`
     - `twn`
     - `usa`
-    - `all` (Don't tag a game released in multiple regions as `ALL`. This is reserved for specific games released as such.)
+    - `all` (Don't tag a game released in multiple regions as `all`. This is reserved for specific games released as such.)
   - `release_date` (String): When the game was released in this region. See: [Dates](#dates).
   
 - `testcases` (Array of tables): Info about each submitted test case.
@@ -82,12 +82,12 @@ needs_shared_font = false
 
 [[ releases ]]
 title = "0004000000125500"
-region = "USA"
+region = "usa"
 release_date = "2015-02-13"
 
 [[ releases ]]
 title = "0004000000125600"
-region = "EUR"
+region = "eur"
 release_date = "2015-02-13"
 
 [[ testcases ]]
