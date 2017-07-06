@@ -30,7 +30,7 @@ In this repo, DAT files follow the [TOML](https://github.com/toml-lang/toml) syn
 Game issues can be found [here](https://github.com/citra-emu/citra/issues). The ID of the issue can be found at the end of the URL. For example, [SNES Virtual Console Games - Crash on Boot](https://github.com/citra-emu/citra/issues/2782)'s ID is 2782.
 
 ### Screenshots
-The recommended application for capturing the icon, boxart, and screenshots is [ShareX](https://github.com/ShareX/ShareX). Screenshots can not be compressed.
+The recommended application for capturing the icon, boxart, and screenshots is [ShareX](https://github.com/ShareX/ShareX). Screenshots can not be compressed, and must be in the PNG format.
 
 ## Code
 The code consists of the actual files in the Github repisitory. To modify them, you have to fork this repo, make your changes, and send a pull request.
