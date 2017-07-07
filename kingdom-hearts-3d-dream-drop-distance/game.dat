@@ -3,17 +3,27 @@ description = "Kingdom Hearts 3D: Dream Drop Distance is an action role-playing 
 needs_system_files = false
 needs_shared_font = true
 
-[[releases]]
+[[ releases ]]
 title = "000400000004EE00"
 region = "jpn"
 release_date = "2012-03-29"
 
-[[releases]]
+[[ releases ]]
 title = "000400000008D300"
 region = "usa"
 release_date = "2012-07-31"
 
-[[releases]]
+[[ releases ]]
 title = "0004000000095500"
 region = "eur"
 release_date = "2012-07-20"
+
+[[ testcases ]]
+title = "0004000000095500"
+compatability = "1"
+date = "2017-07-06"
+version = "HEAD-c017065"
+author = "OrangSquid"
+cpu = "Intel Core i7-6700HQ @ 2.60 GHz
+gpu = "GeForce GTX 965M"
+os = "Windows 10 15063"
