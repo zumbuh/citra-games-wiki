@@ -24,6 +24,6 @@ compatability = "1"
 date = "2017-07-06"
 version = "HEAD-c017065"
 author = "OrangSquid"
-cpu = "Intel Core i7-6700HQ @ 2.60 GHz
+cpu = "Intel Core i7-6700HQ @ 2.60 GHz"
 gpu = "GeForce GTX 965M"
 os = "Windows 10 15063"
