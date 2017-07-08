@@ -20,7 +20,7 @@ release_date = "2012-07-20"
 
 [[ testcases ]]
 title = "0004000000095500"
-compatability = "1"
+compatibility = "1"
 date = "2017-07-06"
 version = "HEAD-c017065"
 author = "OrangSquid"
