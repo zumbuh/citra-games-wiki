@@ -1,0 +1,9 @@
+title = "Project X Zone"
+description = "Tactical RPG developed by Banpresto and Monolith Soft and published by Bandai Namco Entertainment."
+needs_system_files = false
+needs_shared_font = true
+
+[[releases]]
+title = "00040000000DD700"
+region = "eur"
+release_date = "2013-07-05"
