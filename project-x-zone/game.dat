@@ -8,6 +8,16 @@ title = "00040000000DD700"
 region = "eur"
 release_date = "2013-07-05"
 
+[[releases]]
+title = "0004000000073900"
+region = "jpn"
+release_date = "2012-10-11"
+
+[[releases]]
+title = "00040000000C6400"
+region = "usa"
+release_date = "2013-06-25"
+
 [[ testcases ]]
 title = "00040000000DD700"
 compatibility = "1"
