@@ -252,9 +252,10 @@ function validateTOML(path) {
             validateNotEmpty(testcase, "gpu");
             validateNotEmpty(testcase, "os");
         });
-    } else {
-        validationError("No testcases.")
     }
+    /* else {
+        validationError("No testcases.")
+    }*/
 
     // We only check these if we have a known test result (we cannot know if a game needs
     //  resources if it doesn't even run!)
