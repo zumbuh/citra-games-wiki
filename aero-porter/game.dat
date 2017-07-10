@@ -13,3 +13,13 @@ release_date = "2012-10-25"
 title = "00040000000BC200"
 region = "eur"
 release_date = "2012-10-04"
+
+[[ testcases ]]
+title = "00040000000BC200"
+compatibility = "1"
+date = "2017-07-10"
+version = "HEAD-c017065"
+author = "jdenm8"
+cpu = "Intel Core i5 2500K"
+gpu = "AMD Radeon R9 380"
+os = "Windows 10 14393"
