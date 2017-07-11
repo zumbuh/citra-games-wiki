@@ -17,3 +17,12 @@ release_date = "2012-02-14"
 title = "000400000005D700"
 region = "eur"
 release_date = "2011-11-25"
+
+[[testcases]]
+title = "000400000005D700"
+compatibility = "3"
+date = "2017-07-12"
+version = "HEAD-c017065"
+cpu = "Intel i5 2500K"
+gpu = "AMD Radeon R9 380"
+os = "Windows 10 Build 14393"
