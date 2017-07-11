@@ -1,5 +1,5 @@
 title = "Health and Safety Information"
-description = "Health and safety information for the Nintendo 3DS is pre-installed on the 3DS as a system application,"
+description = "Health and safety information for the Nintendo 3DS is pre-installed on the 3DS as a system application."
 needs_system_files = false
 needs_shared_font = true
 
@@ -10,7 +10,7 @@ release_date = "2011-03-27"
 
 [[ testcases ]]
  title = "0004001000021300"
- compatibility = "1"
+ compatibility = "0"
  date = "2017-07-11"
  version = "HEAD-c017065"
  author = "Breadfish64"
