@@ -2,6 +2,7 @@ title = "Tales of the Abyss"
 description = "Tales of the Abyss is a Japanese RPG developed by Namco Tales Studio and published by Bandai Namco Entertainment."
 needs_system_files = false
 needs_shared_font = false
+github_issues = [1542]
 
 [[releases]]
 title = "000400000004A700"
