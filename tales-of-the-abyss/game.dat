@@ -1,8 +1,8 @@
 title = "Tales of the Abyss"
 description = "Tales of the Abyss is a Japanese RPG developed by Namco Tales Studio and published by Bandai Namco Entertainment."
+github_issues = [1542]
 needs_system_files = false
 needs_shared_font = false
-github_issues = [1542]
 
 [[releases]]
 title = "000400000004A700"
@@ -24,7 +24,7 @@ title = "000400000005D700"
 compatibility = "3"
 date = "2017-07-12"
 version = "HEAD-c017065"
+author = "jdenm8"
 cpu = "Intel i5 2500K"
 gpu = "AMD Radeon R9 380"
 os = "Windows 10 Build 14393"
-author = "jdenm8"
