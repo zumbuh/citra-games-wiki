@@ -167,24 +167,9 @@ Each page's title should match the game's respective folder in the code section,
 The format of each page is as follows:
 - H2 header with text saying `Summary`.
 - Brief summary of how the game performs: graphically, auditorily, and frame rate (with general hardware comparison - see MK7 example). 
-- H3 subheader saying `Problems`.
-- Slow frame rate issues are subjective and should not be included.
-- For each problem, a bullet describing an issue the game has.
-- For each of those bullets, make a sub-bullet linking to the relevant Github issue on `citra-emu`.
-- If there's any relevant media, make another sub-bullet linking to it.
 
 An example of a game wiki page is the one for [Mario Kart 7](https://github.com/citra-emu/citra-games-wiki/wiki/Mario-Kart-7):
 ```markdown
 ## Summary
-Mario Kart 7 has some problems in Citra. Graphically, the game suffers from minor issues, but requires decent hardware to obtain near full speed. It suffers from minor audio issues at times, but this does not hinder gameplay in any way. You may experience random crashes, slow down, and may need to transfer save files from Citra to your 3DS to complete certain tracks.
-
-### Problems
-- Random crashes may occur.
-  - Github Issue: [#2443](https://github.com/citra-emu/citra/issues/2443).
-- All particle effects (Such as smoke, tire tracks, or drift sparks.) are rendered incorrectly. They may copy HUD elements, or just be black.
-  - Github Issue: [#1887](https://github.com/citra-emu/citra/issues/1887).
-- Looping audio buffers aren't supported.
-  - Github Issue: [#2093](https://github.com/citra-emu/citra/issues/2093).
-- When using the software renderer, Mii characters are not rendered.
-  - Github Issue: [#1749](https://github.com/citra-emu/citra/issues/1749)
+Mario Kart 7 has some problems in Citra. Graphically, the game suffers from minor issues, but requires decent hardware to obtain near full speed. It suffers from minor audio issues at times, but this does not hinder gameplay in any way. You may experience crashes one some tracks, slow down, and may need to transfer save files from Citra to your 3DS to complete certain tracks.
 ```
