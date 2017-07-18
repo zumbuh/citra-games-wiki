@@ -2,6 +2,7 @@ title = "Zero Escape: Virtue's Last Reward"
 description = "Zero Escape: Virtue's Last Reward is an adventure video game developed by Chunsoft. The story follows the player character Sigma, a man who is abducted and forced along with eight other individuals to play the Nonary Game, which puts its participants in a life-or-death situation."
 needs_system_files = false
 needs_shared_font = false
+incomplete = true
 
 [[releases]]
 title = "0004000000096700"
