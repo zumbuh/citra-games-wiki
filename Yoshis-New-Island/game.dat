@@ -3,6 +3,7 @@ description = "Yoshi's New Island is a 2014 platform game developed by Arzest an
 needs_system_files = false
 needs_shared_font = true
 game_type = "3ds"
+incomplete = true
 
 [[ releases ]]
 title = "0004000000111B00"
