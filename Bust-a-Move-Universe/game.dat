@@ -3,6 +3,7 @@ description = "Bust-a-Move Universe is a puzzle video game developed by Arika an
 needs_system_files = false
 needs_shared_font = false
 game_type = "3ds"
+incomplete = true
 
 [[ releases ]]
 title = "0004000000035E00"
