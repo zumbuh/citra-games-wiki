@@ -3,6 +3,7 @@ description = "Pac-Man & Galaga Dimensions is a compilation of games from the Pa
 needs_system_files = false
 needs_shared_font = false
 game_type = "3ds"
+incomplete = true
 
 [[ releases ]]
 title = "0004000000036300"
