@@ -3,6 +3,7 @@ description = "Sonic Generations is a platform video game developed by Sonic Tea
 needs_system_files = true
 needs_shared_font = false
 game_type = "3ds"
+incomplete = true
 
 [[ releases ]]
 title = "0004000000062300"
