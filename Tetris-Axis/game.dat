@@ -3,6 +3,7 @@ description = "Tetris Axis, released as simply Tetris in some regions, is a puzz
 needs_system_files = true
 needs_shared_font = false
 game_type = "3ds"
+incomplete = true
 
 [[ releases ]]
 title = "0004000000043800"
