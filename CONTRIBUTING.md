@@ -37,7 +37,7 @@ The code consists of the actual files in the Github repisitory. To modify them, 
 
 At the root, there's a folder for each game. The names of these folders should follow these specifications:
 - Only use letters, numbers, and hyphens (No spaces!), because they will be linked to on the site.
-- Use proper capitalization, for consistency.
+- Names should be lowercase to ensure consistency.
 - Have a wiki page with the same name.
 
 ### Metadata
