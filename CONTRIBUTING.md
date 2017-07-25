@@ -1,5 +1,5 @@
 # Contributing
-Contributions to the Citra Games Wiki are welcomed, as keeping all of the data up to date and accurate is a community effort. There are 2 parts to the Wiki:
+Contributions to the Citra Games Wiki are welcomed, as keeping all of the data up to date and accurate is a community effort. When submitting PRs, please only test with the latest Nightly build. There are 2 parts to the Wiki:
  - [Code](#code)
  - [Wiki](#wiki)
 
@@ -66,7 +66,7 @@ The metadata for the game is located at `/<Game Name>/game.dat`. This is require
   - `title` (String): Title ID of this release of the game which was used during testing. See: [Title IDs](#title-ids).
   - `compatibility` (String): How well the game works in Citra. A reference can be found [here](https://citra-emu.org/game/), with `Won't Boot` being `"5"`, and `Perfect` being `"0"`.
   - `date` (String): Last date the game was tested on. See: [Dates](#dates).
-  - `version` (String): Last version of Citra the game was tested on.
+  - `version` (String): Last version of Citra - Nightly the game was tested on.
   - `author` (String): Your forum account name, if you have one. If you don't, don't include this line.
   - `cpu` (String): List your CPU following the example provided.
   - `gpu` (String: List your GPU as recognized by Citra in the terminal.
