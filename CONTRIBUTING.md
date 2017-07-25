@@ -133,7 +133,7 @@ The required process for getting virtual console boxart is:
 - Compress it using [TinyPNG](https://tinypng.com/).
 - Examples are [Legend of Zelda](https://github.com/citra-emu/citra-games-wiki/blob/master/Virtual-Console-Legend-of-Zelda/boxart.png) and [Tetris](https://github.com/citra-emu/citra-games-wiki/blob/master/Virtual-Console-Tetris/boxart.png)
 
-### Screenshots
+### Game Screenshots
 The screenshots for the game are located in `/<Game Name>/screenshots/` (See: [Screenshots](#screenshots). Screenshots **must** follow these specifications:
   - Native resolution.
   - Smallest window size.
