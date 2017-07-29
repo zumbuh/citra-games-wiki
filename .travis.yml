@@ -4,7 +4,7 @@ node_js:
   - "node"
 
 install:
-  - cd _validation
+  - cd validation
   - npm install
 script:
   - node app.js
