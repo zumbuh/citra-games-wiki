@@ -1,0 +1,19 @@
+title = "Etrian Odyssey IV: Legends of the Titan"
+description = "A dungeon-crawler JRPG developed by ATLUS, where you travel across the overworld on a flying ship to explore dungeons and mark unique areas onto your map. You can create your very own guild of explorers with a wide selection of classes that come with unique sets of skills and abilities that would help along the journey and discover the mystery of Yggdrasil.\nFPS takes slight hit when loading into a zone / battle, and when GUI opens up, e.g. dialogue while in a dungeon."
+needs_system_files = true
+needs_shared_font = false
+
+[[releases]]
+title = "00040000000BD300"
+region = "usa"
+release_date = "2012-07-05"
+
+[[testcases]]
+title = "00040000000BD300"
+compatibility = "1"
+date = "2017-07-13"
+version = "HEAD-5137a19"
+cpu = "Intel Core i7-6700HQ"
+gpu = "GeForce GTX 960M"
+os = "Windows 10 15063"
+author = "findanother1"
