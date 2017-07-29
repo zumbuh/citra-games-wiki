@@ -1,36 +1,53 @@
 # Contributing
-Contributions to the Citra Games Wiki are welcomed, as keeping all of the data up to date and accurate is a community effort. When submitting PRs, please only test with the latest Nightly build. There are 2 parts to the Wiki:
- - [Code](#code)
- - [Wiki](#wiki)
+Contributions to the Citra Games Wiki are welcomed, as keeping all of the data up to date and accurate is a community effort.
+
+**Table of Contents**:
+- [Info About This Wiki](#info-about-this-wiki)
+  - [Angle Brackets](#angle-brackets)
+  - [Citra Version](#citra-version)
+  - [Dates](#dates)
+  - [GitHub Issues](#github-issues)
+  - [Screenshots](#screenshots)
+  - [Title IDs](#title-ids)
+  - [TOML](#toml)
+- [Code](#code)
+  - [Metadata](#metadata)
+  - [Icon](#icon)
+  - [Boxart](#boxart)
+  - [Game Screenshots](#game-screenshots)
+  - [Savefiles](#savefiles)
+    - [Save Metadata](#save-metadata)
+    - [Save Data](#save-data)
+- [Wiki](#wiki)
 
 ## Info About This Wiki
 
 ### Angle Brackets
 Throughout this guide, code blocks like `<Value>` are used. This means that "Value" should be replaced by something, and the "<>" should be deleted.
 
-### Dates
+### Citra Version
+All data must be collected from the latest official Citra nightly, downloaded from [here](https://citra-emu.org/download/).
 
+### Dates
 All dates follow the format `<4-Digit Year>-<2-Digit Month>-<2-Digit Day>`. For example, June 3rd 2017 would be "2017-06-03".
 
-### Title IDs
-
-Title IDs can be found near the top of a log when running a game. For example, this is what it looks like for The Legend of Zelda: Ocarina of Time, 0004000000033500: `[   0.019882] Loader <Info> core/loader/ncch.cpp:Load:340: Program ID: 0004000000033500`.
-
-### TOML
-
-In this repo, DAT files follow the [TOML](https://github.com/toml-lang/toml) syntax, where each line consists of the creation of a peice of data. The simplest form of this is assigning a value to a key (`<Key> = <Value>`). The data types used for these `Value`s in this wiki are:
- - Booleans, true or false (Example: `true`.)
- - Integers, numbers (Example: `5`.)
- - Strings, characters with surrounding quotes (Example: `"Hi!"`.)
- - Arrays, collection of booleans, integers, or strings (Example for an array of integers: `[33, 2398, 234]`.)
- 
- These key/value pairs can be grouped together using an array of tables (Example: `[[ Stuff ]]`, with the pairs on the next lines.). These can be used more than once in a TOML file.
- 
 ### GitHub Issues
 Game issues can be found [here](https://github.com/citra-emu/citra/issues). The ID of the issue can be found at the end of the URL. For example, [SNES Virtual Console Games - Crash on Boot](https://github.com/citra-emu/citra/issues/2782)'s ID is 2782.
 
 ### Screenshots
 The recommended application for capturing the icon, boxart, and screenshots is [ShareX](https://github.com/ShareX/ShareX). Screenshots can not be compressed, and must be in the PNG format.
+
+### Title IDs
+Title IDs can be found near the top of a log when running a game. For example, this is what it looks like for The Legend of Zelda: Ocarina of Time, 0004000000033500: `[   0.019882] Loader <Info> core/loader/ncch.cpp:Load:340: Program ID: 0004000000033500`.
+
+### TOML
+In this repo, DAT files follow the [TOML](https://github.com/toml-lang/toml) syntax, where each line consists of the creation of a peice of data. The simplest form of this is assigning a value to a key (`<Key> = <Value>`). The data types used for these `Value`s in this wiki are:
+ - Booleans, true or false (Example: `true`.)
+ - Integers, numbers (Example: `5`.)
+ - Strings, characters with surrounding quotes (Example: `"Hi!"`.)
+ - Arrays, collection of booleans, integers, or strings (Example for an array of integers: `[33, 2398, 234]`.)
+
+These key/value pairs can be grouped together using an array of tables (Example: `[[ Stuff ]]`, with the pairs on the next lines.). These can be used more than once in a TOML file.
 
 ## Code
 The code consists of the actual files in the Github repisitory. To modify them, you have to fork this repo, make your changes, and send a pull request.
@@ -41,14 +58,13 @@ At the root, there's a folder for each game. The names of these folders should f
 - Have a wiki page with the same name.
 
 ### Metadata
-The metadata for the game is located at `/<Game Name>/game.dat`. This is required info about the game. The DAT values (See: [TOML](#toml)) are:
+The metadata for the game is located at `/<Game Name>/game.dat`. This is required info about the game, all feilds are mandatory unless noted otherwise. The DAT values (See: [TOML](#toml)) are:
 - `title` (String): English title of the game. This doesn't have to match the wiki or folder name, so there can be spaces.
 - `description` (String): Get these from [Wikipedia](https://en.wikipedia.org/wiki/List_of_Nintendo_3DS_games). Short, 1-2 line description of the game.
 - `github_issues` (Array of integers): The GitHub issue IDs for the game. See: [GitHub Issues](#github-issues).
-- `needs_system_files` (Boolean): Whether the game requests the system files or not, regardless of whether it could be played without them.
-- `needs_shared_font` (Boolean): Whether the game requests the shared font or not, regardless of whether it could be played without them.
-- `game_type` (String): Whether the game has a retail release, `"3ds"`, is an E-Shop **exclusive**, `"eshop"`, a Virtual Console game, `"vc"`, or DSiWare, `"dsi"`.
-
+- `needs_system_files` (Boolean): Whether the game requests the system files or not, regardless of whether it could be played without them (See: [Citra Version](#citra-version)).
+- `needs_shared_font` (Boolean): Whether the game requests the shared font or not, regardless of whether it could be played without them (See: [Citra Version](#citra-version)).
+- `game_type` (String): Whether the game has a retail release, `"3ds"`, is an E-Shop **exclusive**, `"eshop"`, a Virtual Console game, `"vc"`, or DSiWare, `"dsi"`. This line is optional for retail releases.
 - `releases` (Array of tables): Info about each release of the game.
   - `title` (String): Title ID of this release of the game. See: [Title IDs](#title-ids).
   - `region` (String): Region of the game. Possible values are:
@@ -61,12 +77,11 @@ The metadata for the game is located at `/<Game Name>/game.dat`. This is require
     - `usa`
     - `all` (Don't tag a game released in multiple regions as `all`. This is reserved for specific games released as such.)
   - `release_date` (String): When the game was released in this region. See: [Dates](#dates).
-  
 - `testcases` (Array of tables): Info about each submitted test case.
   - `title` (String): Title ID of this release of the game which was used during testing. See: [Title IDs](#title-ids).
-  - `compatibility` (String): How well the game works in Citra. A reference can be found [here](https://citra-emu.org/game/), with `Won't Boot` being `"5"`, and `Perfect` being `"0"`.
+  - `compatibility` (String): How well the game works in Citra (See: [Citra Version](#citra-version)). A reference can be found [here](https://citra-emu.org/game/), with `Won't Boot` being `"5"`, and `Perfect` being `"0"`.
   - `date` (String): Last date the game was tested on. See: [Dates](#dates).
-  - `version` (String): Last version of Citra - Nightly the game was tested on.
+  - `version` (String): Last version of Citra (See: [Citra Version](#citra-version)) the game was tested on.
   - `author` (String): Your forum account name, if you have one. If you don't, don't include this line.
   - `cpu` (String): List your CPU following the example provided.
   - `gpu` (String: List your GPU as recognized by Citra in the terminal.
@@ -104,7 +119,7 @@ os = "Windows 10 14393"
 ### Icon
 The icon for a game is located at `/<Game Name>/icon.png` (See: [Screenshots](#screenshots). The suggested process for getting one is:
 - Make sure the ROM for the game is in your Citra game directory.
-- Take a screenshot of Citra's library listing.
+- Take a screenshot of Citra's library listing (See: [Citra Version](#citra-version)).
 - Crop out the game icon.
 - The icon should be `48x48`.
 
@@ -116,7 +131,7 @@ The boxart for the game is located at `/<Game Name>/boxart.png`. The suggested p
 - Compress it using [TinyPNG](https://tinypng.com/).
 
 The required process for getting eShop only boxart is:
-- Run the game in Citra.
+- Run the game in Citra (See: [Citra Version](#citra-version)).
 - Use 1x internal resolution.
 - Increase the window size of Citra to fill most of your monitor.
 - Screenshot the title screen, which should only be the top screen.
@@ -125,7 +140,7 @@ The required process for getting eShop only boxart is:
 - Examples are [Legend of Zelda](https://github.com/citra-emu/citra-games-wiki/blob/master/Virtual-Console-Legend-of-Zelda/boxart.png) and [Tetris](https://github.com/citra-emu/citra-games-wiki/blob/master/Virtual-Console-Tetris/boxart.png)
 
 The required process for getting virtual console boxart is:
-- Run the game in Citra.
+- Run the game in Citra (See: [Citra Version](#citra-version)).
 - Use 1x internal resolution.
 - Increase the window size of Citra to fill most of your monitor.
 - Screenshot the title screen, which should only be the top screen.
@@ -134,7 +149,7 @@ The required process for getting virtual console boxart is:
 - Examples are [Legend of Zelda](https://github.com/citra-emu/citra-games-wiki/blob/master/Virtual-Console-Legend-of-Zelda/boxart.png) and [Tetris](https://github.com/citra-emu/citra-games-wiki/blob/master/Virtual-Console-Tetris/boxart.png)
 
 ### Game Screenshots
-The screenshots for the game are located in `/<Game Name>/screenshots/` (See: [Screenshots](#screenshots). Screenshots **must** follow these specifications:
+The screenshots for the game are located in `/<Game Name>/screenshots/` (See: [Screenshots](#screenshots)). Screenshots **must** follow these specifications:
   - Native resolution.
   - Smallest window size.
   - Black background (For the blank space left and right of the bottom screen.). To achieve this, go to the [User Directory](https://citra-emu.org/wiki/user-directory/), and from there navigate to the `config` directory. Open qt-config.ini with a text editor, and set bg_blue, bg_green, and bg_red to 0.
@@ -142,7 +157,7 @@ The screenshots for the game are located in `/<Game Name>/screenshots/` (See: [S
 The name of the screenshot doesn't matter.
 
 ### Savefiles
-#### Metadata
+#### Save Metadata
 The metadata for a save is located at `/<Game Name>/savefiles/<Save Name>.dat`. This is info about the save. The DAT values (See: [TOML](#toml)) are:
 - `title` (String): The location of the save ingame.
 - `description` (String): A brief explanation about the save.
@@ -150,7 +165,7 @@ The metadata for a save is located at `/<Game Name>/savefiles/<Save Name>.dat`. 
 - `title_id` (String): Title ID of the game.
 
 #### Save Data
-The save data is located at `/<Game Name>/savefiles/<Save Name>.zip`. To make a ZIP file, the process is:
+The save data is located at `/<Game Name>/savefiles/<Save Name>.zip` (See: [Citra Version](#citra-version)). To make a ZIP file, the process is:
 - Make sure the ROM for the game is in your Citra game directory.
 - Right click on the game and click `Open Save Data Location`. This should open a folder named `data`.
 - Note the folder that the `data` folder is in. This is the low Title ID. As an example, the low Title ID for The Legend of Zelda: Ocarina of Time is `00033500`.
@@ -166,13 +181,13 @@ Each page's title should match the game's respective folder in the code section,
 
 The format of each page is as follows:
 - H2 header with text saying `Summary`.
-- Brief summary of how the game performs: graphically, auditorily, and frame rate (with general hardware comparison - see MK7 example). 
+- Brief summary of how the game performs: graphically, auditorily, and frame rate (with general hardware comparison - see MK7 example). See: [Citra Version](#citra-version).
 
 An example of a game wiki page is the one for [Mario Kart 7](https://github.com/citra-emu/citra-games-wiki/wiki/Mario-Kart-7):
 ```markdown
 ## Summary
-Mario Kart 7 has some problems in Citra. Graphically, the game suffers from minor issues, 
-but requires decent hardware to obtain near full speed. It suffers from minor audio issues at times, 
+Mario Kart 7 has some problems in Citra. Graphically, the game suffers from minor issues,
+but requires decent hardware to obtain near full speed. It suffers from minor audio issues at times,
 but this does not hinder gameplay in any way. You may experience crashes one some tracks, slow down,
 and may need to transfer save files from Citra to your 3DS to complete certain tracks.
 ```
