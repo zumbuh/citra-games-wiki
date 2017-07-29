@@ -1,5 +1,5 @@
 {
-  "directory": "..",
+  "directory": "../games",
   "regions": ["jpn", "usa", "eur", "aus", "chn", "kor", "twn", "all"],
   "gametypes": ["vc", "dsi", "eshop"],
   "vc_systems": ["nes", "snes", "gb", "gbc", "gba", "gg"],
