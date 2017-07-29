@@ -1,0 +1,19 @@
+title = "Miitopia"
+description = "Miitopia is a role-playing game developed and published by Nintendo for the Nintendo 3DS. The game was released in Japan in December 2016, and worldwide in July 2017."
+needs_system_files = true
+needs_shared_font = true
+
+[[releases]]
+title = "00040000001B4F00"
+region = "eur"
+release_date = "2017-07-28"
+
+[[testcases]]
+title = "00040000001B4F00"
+compatibility = "0"
+date = "2017-07-28"
+version = "HEAD-05a38e3"
+cpu = "Intel Core i5-2430M"
+gpu = "GeForce 315M"
+os = "Windows 10 15063"
+author = "acnleditor2"
