@@ -10,7 +10,7 @@ release_date = "2017-02-28"
 
 [[ testcases ]]
 title = "000400000019F500"
-compatibility = "0"
+compatibility = "1"
 date = "2017-06-05"
 version = "HEAD-8f0a23b"
 author = "soukoba"
