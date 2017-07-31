@@ -10,7 +10,7 @@ release_date = "2017-07-28"
 
 [[testcases]]
 title = "00040000001B4F00"
-compatibility = "0"
+compatibility = "1"
 date = "2017-07-28"
 version = "HEAD-05a38e3"
 cpu = "Intel Core i5-2430M"
