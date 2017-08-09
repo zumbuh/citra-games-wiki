@@ -1,7 +1,7 @@
 {
   "directory": "../games",
   "regions": ["jpn", "usa", "eur", "aus", "chn", "kor", "twn", "all"],
-  "gametypes": ["vc", "dsi", "eshop"],
+  "gametypes": ["3ds", "vc", "dsi", "eshop"],
   "vc_systems": ["nes", "snes", "gb", "gbc", "gba", "gg"],
 
   "permitted_files": ["boxart.png", "icon.png", "game.dat"],
