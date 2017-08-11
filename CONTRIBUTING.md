@@ -87,7 +87,7 @@ The metadata for the game is located at `/<Game Name>/game.dat`. This is require
   - `gpu` (String: List your GPU as recognized by Citra in the terminal.
   - `os` (String): List your OS and version number following the example provided.
 
-An example of a game metadata file is the one for [The Legend of Zelda: Majora's Mask](https://github.com/citra-emu/citra-games-wiki/blob/master/Legend-of-Zelda-Majoras-Mask/game.dat):
+An example of a game metadata file is the one for [The Legend of Zelda: Majora's Mask](https://github.com/citra-emu/citra-games-wiki/blob/master/games/legend-of-zelda-majoras-mask/game.dat):
 ```toml
 title = "The Legend of Zelda: Majora's Mask 3D"
 description = "The Legend of Zelda: Majora's Mask 3D is an action-adventure video game co-developed by Grezzo and Nintendo for the Nintendo 3DS handheld game console. The game is an enhanced remake of The Legend of Zelda: Majora's Mask, which was originally released for the Nintendo 64 home console in 2000. The game was released worldwide in February 2015"
@@ -137,7 +137,7 @@ The required process for getting eShop only boxart is:
 - Screenshot the title screen, which should only be the top screen.
 - Downsize it to approximately `500x300` using [PicResize](http://www.picresize.com/).
 - Compress it using [TinyPNG](https://tinypng.com/).
-- Examples are [Legend of Zelda](https://github.com/citra-emu/citra-games-wiki/blob/master/Virtual-Console-Legend-of-Zelda/boxart.png) and [Tetris](https://github.com/citra-emu/citra-games-wiki/blob/master/Virtual-Console-Tetris/boxart.png)
+- Examples are [Legend of Zelda](https://github.com/citra-emu/citra-games-wiki/blob/master/games/legend-of-zelda/boxart.png) and [Tetris](https://github.com/citra-emu/citra-games-wiki/blob/master/games/tetris/boxart.png)
 
 The required process for getting virtual console boxart is:
 - Run the game in Citra (See: [Citra Version](#citra-version)).
@@ -146,7 +146,7 @@ The required process for getting virtual console boxart is:
 - Screenshot the title screen, which should only be the top screen.
 - Downsize it to approximately `328x300` using [PicResize](http://www.picresize.com/).
 - Compress it using [TinyPNG](https://tinypng.com/).
-- Examples are [Legend of Zelda](https://github.com/citra-emu/citra-games-wiki/blob/master/Virtual-Console-Legend-of-Zelda/boxart.png) and [Tetris](https://github.com/citra-emu/citra-games-wiki/blob/master/Virtual-Console-Tetris/boxart.png)
+- Examples are [Legend of Zelda](https://github.com/citra-emu/citra-games-wiki/blob/master/games/legend-of-zelda/boxart.png) and [Tetris](https://github.com/citra-emu/citra-games-wiki/blob/master/games/tetris/boxart.png)
 
 ### Game Screenshots
 The screenshots for the game are located in `/<Game Name>/screenshots/` (See: [Screenshots](#screenshots)). Screenshots **must** follow these specifications:
