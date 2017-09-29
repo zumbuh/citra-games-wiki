@@ -154,7 +154,7 @@ The screenshots for the game are located in `/<Game Name>/screenshots/` (See: [S
   - Smallest window size.
   - Black background (For the blank space left and right of the bottom screen.). To achieve this, go to the [User Directory](https://citra-emu.org/wiki/user-directory/), and from there navigate to the `config` directory. Open qt-config.ini with a text editor, and set bg_blue, bg_green, and bg_red to 0.
 
-The name of the screenshot doesn't matter.
+Additionally, **there must be at least 3 screenshots**. The name of the screenshots don't matter.
 
 ### Savefiles
 #### Save Metadata
