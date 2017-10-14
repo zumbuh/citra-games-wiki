@@ -188,6 +188,6 @@ An example of a game wiki page is the one for [Mario Kart 7](https://github.com/
 ## Summary
 Mario Kart 7 has some problems in Citra. Graphically, the game suffers from minor issues,
 but requires decent hardware to obtain near full speed. It suffers from minor audio issues at times,
-but this does not hinder gameplay in any way. You may experience crashes one some tracks, slow down,
+but this does not hinder gameplay in any way. You may experience crashes on some tracks, slow down,
 and may need to transfer save files from Citra to your 3DS to complete certain tracks.
 ```
