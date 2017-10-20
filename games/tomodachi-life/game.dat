@@ -1,5 +1,6 @@
 title = "Tomodachi Life"
 description = "Tomodachi Life is a life simulation handheld video game developed by Nintendo SPD and published by Nintendo for the Nintendo 3DS."
+github_issues = [2475]
 needs_system_files = true
 needs_shared_font = true
 
