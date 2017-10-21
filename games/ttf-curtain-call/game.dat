@@ -1,6 +1,6 @@
 title = "Theatrhythm Final Fantasy: Curtain Call"
 description = "Theatrhythm Final Fantasy: Curtain Call is a rhythm video game. A sequel to the 2012 video game Theatrhythm Final Fantasy and the latest title in the rhythm series, it features similar gameplay to its predecessor. It was released for the Nintendo 3DS on April 24, 2014 in Japan, on September 16, 2014 in North America, on September 18, 2014 in Australia, and in Europe on September 19, 2014."
-github_issues = [3102]
+github_issues = [3012]
 needs_system_files = false
 needs_shared_font = true
 game_type = "3ds"
