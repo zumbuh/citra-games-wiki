@@ -1,5 +1,6 @@
 title = "Fantasy Life"
 description = "Fantasy Life is a role-playing video game developed by Level-5, with production assistance from Brownie Brown and h.a.n.d. for the Nintendo 3DS. The game was previously being developed for the Nintendo DS."
+github_issues = [2276]
 needs_system_files = false
 needs_shared_font = false
 
