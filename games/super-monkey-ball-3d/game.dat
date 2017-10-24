@@ -1,5 +1,6 @@
 title = "Super Monkey Ball 3D"
 description = "Super Monkey Ball 3D is an entry in the Super Monkey Ball developed for the Nintendo 3DS handheld game console. Players can either use the Circle Pad or the internal gyroscope of the Nintendo 3DS to navigate AiAi and friends so they can collect as many bananas as possible within the time limit as in previous games in the series."
+incomplete = true
 needs_system_files = false
 needs_shared_font = true
 

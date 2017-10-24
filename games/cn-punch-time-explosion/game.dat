@@ -1,5 +1,6 @@
 title = "Cartoon Network: Punch Time Explosion"
 description = "Cartoon Network: Punch Time Explosion is a 2011 crossover fighting video game developed by Papaya Studio and published by Crave Entertainment, for the Nintendo 3DS."
+incomplete = true
 needs_system_files = false
 needs_shared_font = false
 game_type = "3ds"

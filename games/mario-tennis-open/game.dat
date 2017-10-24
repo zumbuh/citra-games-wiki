@@ -1,5 +1,6 @@
 title = "Mario Tennis Open"
 description = "Mario Tennis Open is a Mario sports game developed by Camelot Software Planning and published by Nintendo for the Nintendo 3DS. The game was developed by Camelot, which has produced most of the previous Mario Tennis titles."
+incomplete = true
 needs_system_files = true
 needs_shared_font = true
 game_type = "3ds"

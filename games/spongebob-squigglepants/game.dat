@@ -1,5 +1,6 @@
 title = "Spongebob SquigglePants"
 description = "SpongeBob SquigglePants is an action video game based on the SpongeBob SquarePants television series, developed by WayForward Technologies and published by THQ. The Nintendo 3DS version was released on May 17, 2011 in North America and in Europe on May 27, 2011."
+incomplete = true
 needs_system_files = false
 needs_shared_font = false
 

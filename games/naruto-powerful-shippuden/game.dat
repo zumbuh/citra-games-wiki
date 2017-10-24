@@ -1,5 +1,6 @@
 title = "Naruto Powerful Shippuden"
 description = "Naruto Powerful Shippuden is a side-scrolling action/adventure game in development by Namco Bandai Games and Inti Creates for the Nintendo 3DS platform. The game is based on the Naruto spin-off series, Rock Lee's Springtime of Youth Full Power Ninja Chronicles."
+incomplete = true
 needs_system_files = false
 needs_shared_font = false
 

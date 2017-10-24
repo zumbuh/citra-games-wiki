@@ -1,5 +1,6 @@
 title = "Fire Emblem: Fates - Special Edition"
 description = "The overarching story follows the protagonist, a customizable Avatar created by the player, as they are unwillingly drawn into a war between the Kingdoms of Hoshido (their birthplace) and Nohr (their adopted home), and must choose which side to support."
+incomplete = true
 needs_system_files = false
 needs_shared_font = false
 

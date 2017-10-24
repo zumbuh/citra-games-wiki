@@ -1,5 +1,6 @@
 title = "Metal Gear Solid: Snake Eater 3D"
 description = "Metal Gear Solid 3: Snake Eater is an action-adventure stealth videogame produced by Konami Computer Entertainment Japan for the PlayStation 2. In 2010, Konami announced a full Metal Gear title for release on the 3DS, which was revealed at Nintendo World 2011 to be Metal Gear Solid: Snake Eater 3D."
+incomplete = true
 needs_system_files = false
 needs_shared_font = false
 

@@ -1,5 +1,6 @@
 title = "Heroes of Ruin"
 description = "Heroes of Ruin is an action role-playing game in which the player battles various enemies such as snipers, beasts, and fencers."
+incomplete = true
 needs_system_files = false
 needs_shared_font = false
 

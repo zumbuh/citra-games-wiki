@@ -1,5 +1,6 @@
 title = "Castlevania Lords Of Shadow - Mirror of Fate"
 description = "The player assumes the role of Gabriel Belmont, his son Trevor Belmont, grandson Simon Belmont (Trevor's son), and Alucard. Mirror of Fate is a side-scrolling action-adventure game."
+incomplete = true
 needs_system_files = false
 needs_shared_font = false
 

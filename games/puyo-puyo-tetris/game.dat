@@ -1,5 +1,6 @@
 title = "Puyo Puyo Tetris"
 description = "Puyo Puyo Tetris is a puzzle video game developed by Sonic Team and published by Sega. The game is a crossover between the Puyo Puyo series and the Tetris franchise, and features various gameplay modes incorporating both aspects. The game includes characters modeled after the seven Tetrominos, which are different puzzle pieces each made of four blocks."
+incomplete = true
 needs_system_files = false
 needs_shared_font = true
 game_type = "3ds"

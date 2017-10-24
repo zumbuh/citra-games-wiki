@@ -1,5 +1,6 @@
 title = "Azure Striker Gunvolt - Striker Pack"
 description = "Azure Striker Gunvolt, is an action-platform game. In addition to utilizing gameplay similar to Mega Man Zero, Azure Striker Gunvolt also introduced new gameplay elements such as Gunvolt's ability to 'tag' enemies and target many at once, adding an additional layer of complexity to the genre."
+incomplete = true
 needs_system_files = false
 needs_shared_font = false
 

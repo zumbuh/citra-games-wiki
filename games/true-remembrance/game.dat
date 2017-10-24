@@ -1,5 +1,6 @@
 title = "True Remembrance"
 description = "The game tells of a future where many people suffer from a pandemic depression known as The Dolor. In an unnamed city, specialized doctors known as Mnemonicides treat patients who suffer from The Dolor. The game's protagonist, a young Mnemonicide named Blackiris, is given the task of curing a young girl named La of The Dolor."
+incomplete = true
 needs_system_files = false
 needs_shared_font = false
 game_type = "eshop"

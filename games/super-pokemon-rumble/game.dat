@@ -1,5 +1,6 @@
 title = "Super Pokémon Rumble"
 description = "Super Pokémon Rumble is an action video game in the Pokémon series for the Nintendo 3DS. It was the first Pokémon game released for Nintendo 3DS."
+incomplete = true
 needs_system_files = false
 needs_shared_font = false
 

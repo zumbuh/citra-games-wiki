@@ -1,5 +1,6 @@
 title = "Health and Safety Information"
 description = "Health and Safety Information for the Nintendo 3DS is pre-installed on the 3DS as a system application."
+incomplete = true
 needs_system_files = false
 needs_shared_font = true
 

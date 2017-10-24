@@ -1,5 +1,6 @@
 title = "Mario Kart 7"
 description = "Mario Kart 7 is a 2011 racing video game. It is the seventh major installment in the Mario Kart series and the third to be released for handheld consoles."
+incomplete = true
 github_issues = [2443, 1887, 2093, 1749]
 needs_system_files = true
 needs_shared_font = false
