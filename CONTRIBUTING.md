@@ -177,7 +177,7 @@ The save data is located at `/<Game Name>/savefiles/<Save Name>.zip` (See: [Citr
 ## Wiki
 The wiki contains info about specific game problems, and can be modified by anyone. They use [Markdown](https://guides.github.com/features/mastering-markdown/) formatting.
 
-Each page's title should match the game's respective folder in the code section, except with hyphens in the code changed to spaces on the wiki.
+Each page's title should match the game's respective folder in the code section, except with hyphens in the code changed to spaces on the wiki. **Don't use the following characters in your wiki page's titles: \ / : * ? " < > |.**
 
 The format of each page is as follows:
 - H2 header with text saying `Summary`.
