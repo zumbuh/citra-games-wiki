@@ -60,7 +60,7 @@ At the root, there's a folder for each game. The names of these folders should f
 ### Metadata
 The metadata for the game is located at `/<Game Name>/game.dat`. This is required info about the game, all feilds are mandatory unless noted otherwise. The DAT values (See: [TOML](#toml)) are:
 - `title` (String): English title of the game. This doesn't have to match the wiki or folder name, so there can be spaces.
-- `description` (String): Get these from [Wikipedia](https://en.wikipedia.org/wiki/List_of_Nintendo_3DS_games). Short, 1-2 line description of the game.
+- `description` (String): Get these from [Wikipedia](https://en.wikipedia.org/wiki/List_of_Nintendo_3DS_games). Short, 2-3 line description of the game.
 - `github_issues` (Array of integers): The GitHub issue IDs for the game. See: [GitHub Issues](#github-issues).
 - `needs_system_files` (Boolean): Whether the game requests the system files or not, regardless of whether it could be played without them (See: [Citra Version](#citra-version)).
 - `needs_shared_font` (Boolean): Whether the game requests the shared font or not, regardless of whether it could be played without them (See: [Citra Version](#citra-version)).
