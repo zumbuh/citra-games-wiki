@@ -16,7 +16,7 @@ release_date = 2015-11-03"
 [[releases]]
 title = "000400000012cb00"
 region = "eur"
-release_date = 2015-11-03"
+release_date = "2015-11-03"
 
 [[testcases]]
 title = "0004000000196900"
