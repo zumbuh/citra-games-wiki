@@ -1,5 +1,5 @@
 title = "Metroid II: Return of Samus"
-description = "Metroid II: Return of Samus is an action adventure game developed by Nintendo and initial published for the Game Boy. The 3DS version was published on 24.11.2011"
+description = "Metroid II: Return of Samus is an action adventure game developed by Nintendo and initial published for the Game Boy."
 needs_system_files = false
 needs_shared_font = true
 game_type = "vc"
