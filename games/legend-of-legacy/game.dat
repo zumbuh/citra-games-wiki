@@ -1,8 +1,9 @@
 title = "The Legend of Legacy"
 description = "The game is a spiritual sequel to the SaGa series, and plays as a Japanese role-playing video game. However, while many games in the genre are rather linear in their progression, the game allows the player to freely progress through the game. The player is given a vague main goal in the beginning, and otherwise, it is up to the player to explore the game and figure out where to go from there."
+github_issues = [3056]
 incomplete = true
 needs_system_files = false
-needs_shared_font = false
+needs_shared_font = true
 
 [[ releases ]]
 title = "000400000017C800"
