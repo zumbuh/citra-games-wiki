@@ -1,19 +1,19 @@
 title = "Minecraft: New Nintendo 3DS Edition"
-description = "Minecraft is a game about placing blocks and going on adventures.\n\nExplore randomly‐generated worlds and build amazing things from the simplest of homes to the grandest of castles. Play in Creative Mode with unlimited resources or mine deep into the world in survival mode, crafting weapons and armor to fend off the dangerous mobs."
+description = "Minecraft: New Nintendo 3DS Edition is the version of Minecraft developed by Other Ocean Interactive and Mojang AB exclusively for the \"New\" versions of the 3DS and 2DS systems. The creative and building aspects of Minecraft enable players to build constructions out of textured cubes in a 3D procedurally generated world."
 needs_system_files = true
 needs_shared_font = false
 
 [[releases]]
-title = "00040000001b8700"
+title = "00040000001B8700"
 region = "usa"
 release_date = "2017-09-13"
 
 [[testcases]]
-title = "00040000001b8700"
+title = "00040000001B8700"
 compatibility = "5"
 date = "2017-10-30"
-version = "HEAD-19f87aa"
-cpu = "AMD FX-8350"
+version = "HEAD-ed17c54"
+cpu = "FX-8350"
 gpu = "Radeon R9 390"
 os = "Windows 10 15063"
 author = "zumbuh"
